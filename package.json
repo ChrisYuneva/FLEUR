@@ -1,0 +1,28 @@
+{
+    "name": "repos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/index.tsx",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "ijl-cli --server --port=8099 --with-open-browser",
+        "build": "npm run clean && ijl-cli --build --dev",
+        "build:prod": "npm run clean && ijl-cli --build",
+        "clean": "rimraf dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://chris_yuneva@bitbucket.org/chris_yuneva/repos.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/chris_yuneva/repos#readme",
+    "dependencies": {
+        "@ijl/cli": "^1.10.3",
+        "express": "^4.17.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "typescript": "^4.0.5"
+    }
+}
