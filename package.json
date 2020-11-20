@@ -19,10 +19,17 @@
     "license": "ISC",
     "homepage": "https://bitbucket.org/chris_yuneva/repos#readme",
     "dependencies": {
-        "@ijl/cli": "^1.10.3",
+        "@ijl/cli": "^1.10.4",
         "express": "^4.17.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "typescript": "^4.0.5"
+    },
+    "devDependencies": {
+        "css-loader": "^5.0.1",
+        "postcss": "^8.1.7",
+        "postcss-loader": "^4.1.0",
+        "postcss-preset-env": "^6.7.0",
+        "style-loader": "^2.0.0"
     }
 }

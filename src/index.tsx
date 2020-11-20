@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const App = () => <h1>Hello world для проекта - repos</h1>
+import App from './app';
 
 export default () => <App/>;
 
