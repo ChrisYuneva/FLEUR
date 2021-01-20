@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    font-family: Roboto;
+    overflow-x: hidden;
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+
+        .name {
+            display: flex;
+            font-family: Consolas;
+            font-size: 48px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 64px;
+        }
+
+        .link {
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            padding-bottom: 16px;
+        }
+    }
+
+    .div {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 200px);
+    }
+
+    .header {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .ref {
+            height: 30px;
+            width: 138px;
+            color: black;
+            align-items: center;
+            display: flex;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 8px;
+            padding: 0;
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+        }
+
+        .text {
+            padding-left: 8px;
+            font-size: 16px;
+            font-family: Roboto;
+        }
+    }
+
+    .scan {
+        display: flex;
+        flex-direction: column;
+        font-family: Roboto;
+        padding-left: 30px;
+
+        span {
+            max-width: 750px;
+        }
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+
+        .showlittle {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 64px;
+        }
+    }
+}
+
+

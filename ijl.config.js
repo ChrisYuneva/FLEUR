@@ -7,14 +7,14 @@ module.exports = {
     "apiPath": "stubs/api",
     webpackConfig: {
         output: {
-            publicPath: `/static/repos/${pkg.version}/`
+            publicPath: `/static/${pkg.name}/${pkg.version}/`
         },
         module: {
             rules: [
                 {
                     test: /\.css$/i,
                     use: [
-                        'style-loader',
+                        {loader: 'style-loader'},
                         {
                             loader: 'css-loader',
                             options: {
@@ -73,4 +73,18 @@ module.exports = {
             ],
         },
     },
+    navigations: {
+        'repos':'/repos',
+        'link.repos.basket':'/basket',
+        'link.repos.home':'/home',
+        'link.repos.showcase_dress':'/showcase_dress',
+        'link.repos.home_man':'/home_man',
+        'link.repos.showcase_tshirts_women':'/showcase_tshirts_women',
+        'link.repos.showcase_jackets_women':'/showcase_jackets_women',
+        'link.repos.showcase_shirts_women':'/showcase_shirts_women',
+        'link.repos.showcase_hoodies_women':'/showcase_hoodies_women',
+        'link.repos.showcase_jeans_women':'/showcase_jeans_women',
+        'link.repos.showcase_skirts':'/showcase_skirts',
+        'link.repos.showcase_accessories':'/showcase_accessories',
+    }
 }

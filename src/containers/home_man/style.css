@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://allfont.ru/allfont.css?fonts=cinzel');
+
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("../../asset/images/man.jpg");
+    background-size: 100% 100%;
+    overflow-y: hidden;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+
+        .search {
+            align-items: center;
+            margin: 16px auto;
+            width: 300px;
+            height: 30px;
+            justify-content: center;
+            display: flex;
+        }
+
+        .search .line {
+            border: none;
+            outline: none !important;
+            border-bottom: 1px solid white;
+            background: transparent;
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            color: white;
+        }
+
+        ::placeholder {
+            font-size: 20px;
+            color: white;
+        }
+
+        .name {
+            display: flex;
+            font-size: 48px;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-style: normal;
+            font-weight: lighter;
+            font-family: Cinzel, serif;
+            padding-left: 36px;
+        }
+
+        .ref {
+            display: flex;
+            height: 30px;
+        //width: 138px;
+            color: white;
+            align-items: center;
+            text-decoration: none;
+        //padding: 0;
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+        }
+
+        .text {
+            padding-left: 8px;
+            font-size: 16px;
+            font-family: Roboto;
+        }
+    }
+
+    .arrow_div {
+        display: flex;
+        flex-direction: row;
+    //width: 100vw;
+        height: 45%;
+    //height: 35px;
+        align-items: flex-end;
+
+        .arrow_d {
+            display: flex;
+            flex-direction: row;
+            height: 35px;
+            width: 150px;
+            color: white;
+            font-family: Roboto;
+            right: 0;
+            /*top: 50%;*/
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    .home {
+    //width: 100vw;
+        height: 55%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        text-decoration: none;
+        .rectangle {
+            display: flex;
+            width: 220px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            font-family: Roboto;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position:fixed;
+    overflow:hidden;
+}
+
+.box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.text {
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+/*.arrow_d {
+    /*position: absolute;*/
+/*height: 35px;
+width: 150px;
+color: white;
+font-family: Roboto;
+right: 0;
+top: 50%;
+margin: 0;
+padding: 0;
+align-items: center;
+display: flex;
+cursor: pointer;
+}*/
+
+.arrow {
+    width: 55px;
+    height: 35px;
+}
+
+.arrow_man {
+    font-size: 20px;
+}
+
+
+/*.ref {
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    color: white;
+    right: 0;
+    top: 0;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}*/
+
