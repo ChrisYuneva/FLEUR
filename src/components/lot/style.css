@@ -3,9 +3,11 @@
     flex-direction: column;
 
     .goods {
+        display: flex;
         padding-bottom: 16px;
 
         img {
+            display: flex;
             width: 250px;
             height: 350px;
             padding-right: 32px;

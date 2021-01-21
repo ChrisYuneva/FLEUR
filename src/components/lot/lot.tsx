@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import style from "./style.css";
-import {URLs} from "../../__data__/urls";
-import asset from "../../asset";
+import style from './style.css';
+import { URLs } from '../../__data__/urls';
+import asset from '../../asset';
 
 interface LotProps {
     img: any;
@@ -10,10 +10,13 @@ interface LotProps {
     price: string;
 }
 
-const Lot: React.FC<LotProps> = ({img, name, price}) => (
+const Lot: React.FC<LotProps> = ({ img, name, price }) => (
     <div className={style.showlittle}>
         <a className={style.goods}>
-            <img src={img} className={style.image}/>
+            <img src={img} />
+            {/*<span className={style.caption}>*/}
+            {/*    Купить*/}
+            {/*</span>*/}
         </a>
         <a>
             {name} <br /> {price}

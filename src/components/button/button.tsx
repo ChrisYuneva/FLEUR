@@ -1,7 +1,7 @@
-import React from 'react'
-import cn from 'classnames'
+import React from 'react';
+import cn from 'classnames';
 
-import style from './style.css'
+import style from './style.css';
 
 interface ButttonProps {
     colorScheme: 'purple' | 'blue';
@@ -10,6 +10,6 @@ interface ButttonProps {
 
 const Button: React.FC<ButttonProps> = ({ colorScheme, children, onClick }) => (
     <button className={cn(style.main, style[colorScheme])}>{children}</button>
-)
+);
 
 export default Button;

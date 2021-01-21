@@ -1,53 +1,48 @@
-import  React from 'react';
-import {
-    Switch,
-    Route,
-    Link,
-    Redirect
-} from "react-router-dom";
+import React from 'react';
+import { Switch, Route, Link, Redirect } from 'react-router-dom';
 
-import {URLs} from '../__data__/urls';
+import { URLs } from '../__data__/urls';
 
 import Home from './home';
 
-import Basket from "./basket";
+import Basket from './basket';
 
-import ShowcaseDress from "./showcase_dress";
+import ShowcaseDress from './showcase_dress';
 
-import ShowcaseTshirtsW from "./showcase_tshirts_women";
+import ShowcaseTshirtsW from './showcase_tshirts_women';
 
-import ShowcaseJacketsW from "./showcase_jackets_women";
+import ShowcaseJacketsW from './showcase_jackets_women';
 
-import HomeMans from "./home_man";
+import HomeMans from './home_man';
 
 const Dashboard = () => (
     <Switch>
         <Route exact path="/">
-            <Redirect to={URLs.home.url}/>
+            <Redirect to={URLs.home.url} />
         </Route>
 
         <Route path={URLs.home.url}>
-            <Home/>
+            <Home />
         </Route>
 
         <Route path={URLs.basket.url}>
-            <Basket/>
+            <Basket />
         </Route>
 
         <Route path={URLs.showcase_dress.url}>
-            <ShowcaseDress/>
+            <ShowcaseDress />
         </Route>
 
         <Route path={URLs.home_man.url}>
-            <HomeMans/>
+            <HomeMans />
         </Route>
 
         <Route path={URLs.showcase_tshirts_women.url}>
-            <ShowcaseTshirtsW/>
+            <ShowcaseTshirtsW />
         </Route>
 
         <Route path={URLs.showcase_jackets_women.url}>
-            <ShowcaseJacketsW/>
+            <ShowcaseJacketsW />
         </Route>
 
         <Route path={URLs.showcase_shirts_women.url}>
@@ -74,5 +69,5 @@ const Dashboard = () => (
             <h1>Not found</h1>
         </Route>
     </Switch>
-)
+);
 export default Dashboard;

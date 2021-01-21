@@ -29,6 +29,15 @@
             color: black;
             padding-bottom: 16px;
         }
+
+        .link a:hover{
+            background: red;
+        }
+
+        .link a:link {
+            color: #0000d0;
+            padding: 2px;
+        }
     }
 
     .div {
@@ -91,5 +100,3 @@
         }
     }
 }
-
-

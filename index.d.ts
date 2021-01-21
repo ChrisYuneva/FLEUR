@@ -1,9 +1,9 @@
-declare module '*.css'{
+declare module '*.css' {
     interface Style {
-        [key: string]:string;
+        [key: string]: string;
     }
 
-    const style:Style;
+    const style: Style;
 
     export default style;
 }

@@ -1,4 +1,4 @@
-import {getNavigations} from '@ijl/cli';
+import { getNavigations } from '@ijl/cli';
 
 const navigations = getNavigations('repos');
 
@@ -35,6 +35,6 @@ export const URLs = {
         url: navigations['link.repos.showcase_accessories'],
     },
     home_man: {
-        url: navigations['link.repos.home_man']
-    }
-}
+        url: navigations['link.repos.home_man'],
+    },
+};
