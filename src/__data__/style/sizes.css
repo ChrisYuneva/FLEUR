@@ -1,6 +1,8 @@
 :root {
-    —offset-lg: 48px;
-    —offset-md: 24px;
-    —offset-sm: 16px;
-    —offset-xs: 8px;
+    --ofset-xs: 8px;
+    --offset-sm: 16px;
+    --offset-md: 24px;
+    --offset-bmd: 32px;
+    --offset-lg: 48px;
+    --offset-mlg: 64px;
 }

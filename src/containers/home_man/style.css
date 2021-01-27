@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://allfont.ru/allfont.css?fonts=cinzel');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .wrapper {
     display: flex;
@@ -44,6 +48,7 @@
         }
 
         .name {
+            font-family: 'Montserrat', sans-serif;
             display: flex;
             font-size: 48px;
             align-items: center;
@@ -51,7 +56,6 @@
             color: white;
             font-style: normal;
             font-weight: lighter;
-            font-family: Cinzel, serif;
             padding-left: 36px;
         }
 

@@ -10,7 +10,7 @@ import { URLs } from '../../__data__/urls';
 
 import asset from '../../asset';
 
-class ShowcaseJacketsW extends React.Component {
+class ShowcaseShirtsM extends React.Component {
     render() {
         return (
             <div className={style.wrapper}>
@@ -21,19 +21,13 @@ class ShowcaseJacketsW extends React.Component {
 
                     <Link
                         className={style.link}
-                        to={URLs.showcase_dress.url}
-                    >
-                        Платья
-                    </Link>
-                    <Link
-                        className={style.link}
                         to={URLs.showcase_jackets_women.url}
                     >
                         Куртки
                     </Link>
                     <Link
                         className={style.link}
-                        to={URLs.showcase_shirts_women.url}
+                        to={URLs.showcase_shirts_men.url}
                     >
                         Рубашки
                     </Link>
@@ -55,12 +49,7 @@ class ShowcaseJacketsW extends React.Component {
                     >
                         Джинсы
                     </Link>
-                    <Link
-                        className={style.link}
-                        to={URLs.showcase_skirts.url}
-                    >
-                        Юбки
-                    </Link>
+
                     <Link
                         className={style.link}
                         to={URLs.showcase_accessories.url}
@@ -79,74 +68,75 @@ class ShowcaseJacketsW extends React.Component {
                         </Link>
                     </header>
                     <div className={style.scan}>
-                        <h2>Куртки</h2>
+                        <h2>Рубашки</h2>
                         <span className={style.span}>
-                            В наших модных пальто и куртках вы будете выглядеть
-                            стильно и забудете о холоде. Приталенные и объемные,
-                            длинные и короткие, однотонные черные и выдержанные
-                            в цветах сезона — пополните ваш гардероб куртками и
-                            пальто из нашей коллекции.
+                            Качественные рубашки отличного покроя в разнообразных стилях. Элегантные и простые рубашки для рабочих будней, а для создания непринужденного образа в выходные дни — удобные повседневные модели.
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.jackets_w_1}
-                                    name={'Куртка с бахромой'}
-                                    price={'4 499 руб.'}
+                                    img={asset.shirt_m_1}
+                                    name={'Джинсовая рубашка с декоративными швами'}
+                                    price={'2 299 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.jackets_w_2}
-                                    name={'Плотная рубашка из вельвета'}
+                                    img={asset.shirt_m_2}
+                                    name={'Джинсовая рубашка с декоративными швами'}
+                                    price={'2 299 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_m_3}
+                                    name={'Рубашка из ткани с рельефным узором в полоску'}
                                     price={'3 299 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.jackets_w_3}
-                                    name={'Куртка в стиле пэчворк'}
-                                    price={'5 999 руб.'}
-                                ></Lot>
-                                <Lot
-                                    img={asset.jackets_w_4}
-                                    name={'Куртка из искусственной кожи'}
-                                    price={'4 499 руб.'}
+                                    img={asset.shirt_m_4}
+                                    name={'Рубашка из ткани с рельефным узором в полоску'}
+                                    price={'3 299 руб.'}
                                 ></Lot>
                             </div>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.jackets_w_5}
-                                    name={'Складывающийся пуховик'}
+                                    img={asset.shirt_m_5}
+                                    name={'Рубашка в клетку из жатой ткани'}
                                     price={'3 299 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.jackets_w_6}
-                                    name={'Куртка из искусственной овчины'}
-                                    price={'5 999 руб.'}
+                                    img={asset.shirt_m_6}
+                                    name={'Базовая джинсовая рубашка'}
+                                    price={'2 299 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.jackets_w_7}
-                                    name={'Пуховик'}
-                                    price={'4 499 руб.'}
+                                    img={asset.shirt_m_7}
+                                    name={'Базовая джинсовая рубашка'}
+                                    price={'2 299 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.jackets_w_8}
-                                    name={'Куртка-рубашка с поясом'}
-                                    price={'4 499 руб.'}
+                                    img={asset.shirt_m_8}
+                                    name={'Рубашка из немнущейся ткани с рельефным узором'}
+                                    price={'2 299 руб.'}
                                 ></Lot>
                             </div>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.jackets_w_9}
-                                    name={'Куртка-рубашка с поясом'}
-                                    price={'4 499 руб.'}
-                                ></Lot>
-                                <Lot
-                                    img={asset.jackets_w_10}
-                                    name={'Легкая стеганая куртка'}
+                                    img={asset.shirt_m_9}
+                                    name={'Рубашка с принтом "Здания"'}
                                     price={'3 299 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.jackets_w_11}
-                                    name={'Пуховик с термонаполнителем'}
-                                    price={'7 299 руб.'}
+                                    img={asset.shirt_m_10}
+                                    name={'Рубашка свободного кроя из хлопка и льна'}
+                                    price={'2 999 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_m_11}
+                                    name={'Базовая рубашка плотно облегающего кроя'}
+                                    price={'3 299 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_m_12}
+                                    name={"Эластичная рубашка"}
+                                    price={'2 999 руб.'}
                                 ></Lot>
                             </div>
                         </div>
@@ -157,4 +147,4 @@ class ShowcaseJacketsW extends React.Component {
     }
 }
 
-export default ShowcaseJacketsW;
+export default ShowcaseShirtsM;

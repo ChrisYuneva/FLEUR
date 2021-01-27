@@ -1,46 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import '../../__data__/style/sizes.css';
 
-body {
-    background: #deb585;
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.box1 {
-    height: 30px;
-    width: 30px;
-}
-.ref1 {
-    position: absolute;
-    height: 30px;
-    width: 120px;
-    color: black;
-    right: 0;
-    top: 0;
-    align-items: center;
+.wrapper {
     display: flex;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-}
+    width: 100vw;
+    //height: 100vh;
+    flex-direction: column;
+    background: #deb585;
 
-.heading {
-    position: relative;
-    width: 100%;
-    font-family: Roboto;
-    left: 120px;
-    top: 100px;
-}
+    .header {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
 
-.menu {
-    width: 200px;
-    left: 0;
-    top: 0;
-    height: 100%;
-}
+        .name {
+            display: flex;
+            font-size: 48px;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-style: normal;
+            font-weight: lighter;
+            padding-left: 36px;
+        }
+    }
 
+    .scan{
+        margin-top: 50px;
+        margin-left: 200px;
+    }
 
-.prod1 {
-    width: 256px;
-    height: 354px;
-    margin-right: 50px;
+    .show {
+        display: flex;
+        flex-direction: column;
+        padding-top: var(--offset-bmd);
+        margin-left: 200px;
+
+        .showrow {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: var(--offset-mlg);
+        }
+
+        .del {
+            padding-top: 24px;
+        }
+    }
 }

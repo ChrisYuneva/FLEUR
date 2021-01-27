@@ -86,5 +86,7 @@ module.exports = {
         'link.repos.showcase_jeans_women':'/showcase_jeans_women',
         'link.repos.showcase_skirts':'/showcase_skirts',
         'link.repos.showcase_accessories':'/showcase_accessories',
+        'link.repos.showcase_jackets_men':'/showcase_jackets_men',
+        'link.repos.showcase_shirts_men':'/showcase_shirts_men'
     }
 }

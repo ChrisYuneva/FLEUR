@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 *{
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -78,16 +78,13 @@
         .text {
             padding-left: 8px;
             font-size: 16px;
-            font-family: Roboto;
         }
     }
 
     .arrow_div {
         display: flex;
         flex-direction: row;
-        //width: 100vw;
         height: 45%;
-        //height: 35px;
         align-items: flex-end;
         justify-content: flex-end;
 
@@ -97,9 +94,7 @@
             height: 35px;
             width: 150px;
             color: white;
-            font-family: Roboto;
             right: 0;
-            /*top: 50%;*/
             margin: 0;
             padding: 0;
             align-items: center;
@@ -108,7 +103,6 @@
         }
     }
     .home {
-        //width: 100vw;
         height: 55%;
         align-items: center;
         justify-content: center;
@@ -124,7 +118,6 @@
                 background: transparent;
                 border: 2px solid white;
                 color: white;
-                font-family: Roboto;
                 text-decoration: none;
                 align-items: center;
                 justify-content: center;
@@ -143,32 +136,6 @@
     overflow:hidden;
 }
 
-.box {
-    position: relative;
-    height: 30px;
-    width: 30px;
-}
-
-.text {
-    font-size: 16px;
-    font-family: Roboto;
-}
-
-/*.arrow_d {
-    /*position: absolute;*/
-    /*height: 35px;
-    width: 150px;
-    color: white;
-    font-family: Roboto;
-    right: 0;
-    top: 50%;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-}*/
-
 .arrow {
     width: 55px;
     height: 35px;
@@ -178,18 +145,4 @@
     font-size: 20px;
 }
 
-
-/*.ref {
-    position: absolute;
-    height: 30px;
-    width: 120px;
-    color: white;
-    right: 0;
-    top: 0;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}*/
 

@@ -37,4 +37,10 @@ export const URLs = {
     home_man: {
         url: navigations['link.repos.home_man'],
     },
+    showcase_jackets_men: {
+        url: navigations['link.repos.showcase_jackets_men'],
+    },
+    showcase_shirts_men: {
+        url: navigations['link.repos.showcase_shirts_men'],
+    },
 };

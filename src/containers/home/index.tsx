@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LabeledInput, Button } from '@main/components';
+import { Link } from 'react-router-dom';
 
 import style from './style.css';
 
@@ -12,37 +12,37 @@ class Home extends React.Component {
     render() {
         return (
             <div className={style.wrapper}>
-                <div className={style.header}>
+                <header className={style.header}>
                     {/*<div className={style.search}>*/}
                     {/*    <input className={style.line} type="text" id={style.search} placeholder="Поиск"/>*/}
                     {/*</div>*/}
-                    <a className={style.name} href={'/repos' + URLs.home.url}>
-                        BLOM
-                    </a>
-                    <a className={style.ref} href={'/repos' + URLs.basket.url}>
+                    <Link className={style.name} to={URLs.home.url}>
+                        FLEUR
+                    </Link>
+                    <Link className={style.ref} to={URLs.basket.url}>
                         <img src={asset.icon} className={style.box} />
                         <span className={style.text}>Корзина (0)</span>
-                    </a>
-                </div>
+                    </Link>
+                </header>
 
                 <div className={style.arrow_div}>
-                    <a
+                    <Link
                         className={style.arrow_d}
-                        href={'/repos' + URLs.home_man.url}
+                        to={URLs.home_man.url}
                     >
                         <img src={asset.icon2} className={style.arrow} />
                         <span className={style.arrow_man}>Мужчины</span>
-                    </a>
+                    </Link>
                 </div>
 
-                <a
+                <Link
                     className={style.home}
-                    href={'/repos' + URLs.showcase_dress.url}
+                    to={URLs.showcase_dress.url}
                 >
                     <div className={style.rectangle}>
                         <span className={style.home_s}>Перейти к покупкам</span>
                     </div>
-                </a>
+                </Link>
             </div>
         );
     }

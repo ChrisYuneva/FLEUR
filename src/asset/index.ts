@@ -51,6 +51,33 @@ import jackets_w_9 from './images/jackets_w_9.jpg';
 import jackets_w_10 from './images/jackets_w_10.jpg';
 import jackets_w_11 from './images/jackets_w_11.jpg';
 
+import jackets_m_1 from './images/jackets_m_1.jpg';
+import jackets_m_2 from './images/jackets_m_2.jpg';
+import jackets_m_3 from './images/jackets_m_3.jpg';
+import jackets_m_4 from './images/jackets_m_4.jpg';
+import jackets_m_5 from './images/jackets_m_5.jpg';
+import jackets_m_6 from './images/jackets_m_6.jpg';
+import jackets_m_7 from './images/jackets_m_7.jpg';
+import jackets_m_8 from './images/jackets_m_8.jpg';
+import jackets_m_9 from './images/jackets_m_9.jpg';
+import jackets_m_10 from './images/jackets_m_10.jpg';
+import jackets_m_11 from './images/jackets_m_11.jpg';
+import jackets_m_12 from './images/jackets_m_12.jpg';
+import jackets_m_13 from './images/jackets_m_13.jpg';
+
+import shirt_m_1 from './images/shirts_m_1.jpg';
+import shirt_m_2 from './images/shirts_m_2.jpg';
+import shirt_m_3 from './images/shirts_m_3.jpg';
+import shirt_m_4 from './images/shirts_m_4.jpg';
+import shirt_m_5 from './images/shirts_m_5.jpg';
+import shirt_m_6 from './images/shirts_m_6.jpg';
+import shirt_m_7 from './images/shirts_m_7.jpg';
+import shirt_m_8 from './images/shirts_m_8.jpg';
+import shirt_m_9 from './images/shirts_m_9.jpg';
+import shirt_m_10 from './images/shirts_m_10.jpg';
+import shirt_m_11 from './images/shirts_m_11.jpg';
+import shirt_m_12 from './images/shirts_m_12.jpg';
+
 export default {
     icon,
     backgroung,
@@ -96,4 +123,29 @@ export default {
     jackets_w_9,
     jackets_w_10,
     jackets_w_11,
+    jackets_m_1,
+    jackets_m_2,
+    jackets_m_3,
+    jackets_m_4,
+    jackets_m_5,
+    jackets_m_6,
+    jackets_m_7,
+    jackets_m_8,
+    jackets_m_9,
+    jackets_m_10,
+    jackets_m_11,
+    jackets_m_12,
+    jackets_m_13,
+    shirt_m_1,
+    shirt_m_2,
+    shirt_m_3,
+    shirt_m_4,
+    shirt_m_5,
+    shirt_m_6,
+    shirt_m_7,
+    shirt_m_8,
+    shirt_m_9,
+    shirt_m_10,
+    shirt_m_11,
+    shirt_m_12,
 };

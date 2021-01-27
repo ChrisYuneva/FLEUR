@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { LabeledInput, Button } from '@main/components';
+import { Link } from 'react-router-dom';
 
 import style from './style.css';
 
@@ -8,45 +7,45 @@ import { URLs } from '../../__data__/urls';
 
 import asset from '../../asset';
 
+import { Lot } from '../../components';
+
 class Basket extends React.Component {
     render() {
         return (
-            <div>
-                <div className={style.background}>
-                    <a className={style.ref1} href={'/repos' + URLs.basket.url}>
-                        <img src={asset.icon3} className={style.box1} />
-                        <span className={style.text1}>Корзина ( )</span>
-                    </a>
-
-                    <div className={style.menu}>
-                        <p></p>
+            <div className={style.wrapper}>
+                <header className={style.header}>
+                    <Link className={style.name} to={URLs.home.url}>
+                        FLEUR
+                    </Link>
+                    {/*<Link className={style.ref} to={URLs.basket.url}>*/}
+                    {/*    <img src={asset.icon} className={style.box} />*/}
+                    {/*    <span className={style.text}>Корзина (0)</span>*/}
+                    {/*</Link>*/}
+                </header>
+                <div className={style.scan}>
+                    <h2>Корзина</h2>
+                    <span>Количество товаров: </span>
+                </div>
+                <div className={style.show}>
+                    <div className={style.showrow}>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}>
+                            <a className={style.del}>Удалить</a>
+                        </Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
                     </div>
-
-                    <div className={style.test}>
-                        <div className={style.heading}>
-                            <h1>Корзина </h1>
-                            <span>Количество товаров: 4</span>
-                            <div>
-                                <div className={style.product}>
-                                    <img
-                                        src={asset.dress1}
-                                        className={style.prod1}
-                                    />
-                                    <img
-                                        src={asset.dress1}
-                                        className={style.prod1}
-                                    />
-                                    <img
-                                        src={asset.dress1}
-                                        className={style.prod1}
-                                    />
-                                    <img
-                                        src={asset.dress1}
-                                        className={style.prod1}
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                    <div className={style.showrow}>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                    </div>
+                    <div className={style.showrow}>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
                     </div>
                 </div>
             </div>

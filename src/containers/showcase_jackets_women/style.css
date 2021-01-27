@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import '../../__data__/style/sizes.css';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .wrapper {
     display: flex;
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     flex-direction: row;
-    font-family: Roboto;
-    overflow-x: hidden;
+    background: #deb585;
 
     .nav {
         display: flex;
@@ -16,43 +21,44 @@
 
         .name {
             display: flex;
-            font-family: Consolas;
-            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: var(--offset-lg);
             text-decoration: none;
             color: black;
-            margin-bottom: 64px;
+            margin-bottom: var(--offset-mlg);
+            padding-top: var(--offset-sm);
+            padding-left: var(--offset-bmd);
         }
 
         .link {
-            font-size: 16px;
+            font-size: var(--offset-sm);
             text-decoration: none;
             color: black;
-            padding-bottom: 16px;
+            padding-bottom: var(--offset-sm);
         }
     }
 
     .div {
         display: flex;
         flex-direction: column;
-        width: calc(100vw - 200px);
+        height: 100%;
+        max-width: calc(100vw - 238px);
+        min-width: calc(100vw - 238px);
     }
 
     .header {
-        height: 100px;
+        min-height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
 
         .ref {
             height: 30px;
-            width: 138px;
             color: black;
             align-items: center;
             display: flex;
-            text-align: center;
             text-decoration: none;
-            margin-top: 8px;
-            padding: 0;
         }
 
         .box {
@@ -61,34 +67,31 @@
         }
 
         .text {
-            padding-left: 8px;
-            font-size: 16px;
-            font-family: Roboto;
+            padding-left: var(--ofset-xs);
+            font-size: var(--offset-sm);
         }
     }
 
     .scan {
         display: flex;
         flex-direction: column;
-        font-family: Roboto;
         padding-left: 30px;
+        margin-top: 40px;
 
         span {
-            max-width: 750px;
+            max-width: 700px;
         }
     }
 
     .show {
         display: flex;
         flex-direction: column;
-        padding-top: 32px;
+        padding-top: var(--offset-bmd);
 
-        .showlittle {
+        .showrow {
             display: flex;
             flex-direction: row;
-            padding-bottom: 64px;
+            padding-bottom: var(--offset-mlg);
         }
     }
 }
-
-

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { LabeledInput, Button, Lot } from '../../components';
+import { Link } from 'react-router-dom';
+
+import { Lot } from '../../components';
 
 import style from './style.css';
 
@@ -13,68 +15,75 @@ class ShowcaseDress extends React.Component {
         return (
             <div className={style.wrapper}>
                 <nav className={style.nav}>
-                    <a className={style.name} href={'/repos' + URLs.home.url}>
-                        BLOM
-                    </a>
+                    <Link className={style.name} to={URLs.home.url}>
+                        FLEUR
+                    </Link>
 
-                    <a
+                    {/* eslint-disable-next-line react/jsx-no-undef */}
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_dress.url}
+                        to={URLs.showcase_dress.url}
                     >
                         Платья
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_jackets_women.url}
+                        to={URLs.showcase_jackets_women.url}
                     >
                         Куртки
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_shirts_women.url}
+                        to={URLs.showcase_shirts_women.url}
                     >
                         Рубашки
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_hoodies_women.url}
+                        to={URLs.showcase_hoodies_women.url}
                     >
                         Толстовки
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_tshirts_women.url}
+                        to={URLs.showcase_tshirts_women.url}
                     >
                         Футболки
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_jeans_women.url}
+                        to={URLs.showcase_jeans_women.url}
                     >
                         Джинсы
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_skirts.url}
+                        to={URLs.showcase_skirts.url}
                     >
                         Юбки
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={style.link}
-                        href={'/repos' + URLs.showcase_accessories.url}
+                        to={URLs.showcase_accessories.url}
                     >
                         Аксессуары
-                    </a>
+                    </Link>
+                    <Link
+                        className={style.link}
+                        to={URLs.showcase_jackets_men.url}
+                    >
+                        Мужчины
+                    </Link>
                 </nav>
                 <div className={style.div}>
                     <header className={style.header}>
-                        <a
+                        <Link
                             className={style.ref}
-                            href={'/repos' + URLs.basket.url}
+                            to={URLs.basket.url}
                         >
                             <img src={asset.icon3} className={style.box} />
                             <span className={style.text}>Корзина (0)</span>
-                        </a>
+                        </Link>
                     </header>
                     <div className={style.scan}>
                         <h2>Платья</h2>
@@ -86,15 +95,7 @@ class ShowcaseDress extends React.Component {
                             другое.
                         </span>
                         <div className={style.show}>
-                            <div className={style.showlittle}>
-                                {/*    <a className={style.goods} href={'/repos' + URLs.basket.url}>*/}
-
-                                {/*    </a>*/}
-
-                                {/*    <a href={'/repos' + URLs.basket.url}>*/}
-                                {/*        Платье с разрезом <br /> 2 599 руб.*/}
-                                {/*    </a>*/}
-                                {/*</div>*/}
+                            <div className={style.showrow}>
                                 <Lot
                                     img={asset.dress1}
                                     name={'Платье с разрезом'}
@@ -116,7 +117,7 @@ class ShowcaseDress extends React.Component {
                                     price={'2 999 руб.'}
                                 ></Lot>
                             </div>
-                            <div className={style.showlittle}>
+                            <div className={style.showrow}>
                                 <Lot
                                     img={asset.dress5}
                                     name={'Сатиновое платье'}
@@ -138,7 +139,7 @@ class ShowcaseDress extends React.Component {
                                     price={'4 299 руб.'}
                                 ></Lot>
                             </div>
-                            <div className={style.showlittle}>
+                            <div className={style.showrow}>
                                 <Lot
                                     img={asset.dress9}
                                     name={'Платье с деталями'}
