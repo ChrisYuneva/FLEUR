@@ -19,6 +19,8 @@ import ShowcaseJacketsM from './showcase_jackets_men';
 
 import ShowcaseShirtsM from './showcase_shirts_men';
 
+import ShowcaseShirtsW from './showcase_shirts_women';
+
 const Dashboard = () => (
     <Switch>
         <Route exact path="/">
@@ -50,7 +52,7 @@ const Dashboard = () => (
         </Route>
 
         <Route path={URLs.showcase_shirts_women.url}>
-            <p>Рубашки женские</p>
+            <ShowcaseShirtsW />
         </Route>
 
         <Route path={URLs.showcase_hoodies_women.url}>
