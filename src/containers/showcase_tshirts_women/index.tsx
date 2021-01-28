@@ -19,10 +19,7 @@ class ShowcaseTshirtsW extends React.Component {
                         FLEUR
                     </Link>
 
-                    <Link
-                        className={style.link}
-                        to={URLs.showcase_dress.url}
-                    >
+                    <Link className={style.link} to={URLs.showcase_dress.url}>
                         Платья
                     </Link>
                     <Link
@@ -55,10 +52,7 @@ class ShowcaseTshirtsW extends React.Component {
                     >
                         Джинсы
                     </Link>
-                    <Link
-                        className={style.link}
-                        to={URLs.showcase_skirts.url}
-                    >
+                    <Link className={style.link} to={URLs.showcase_skirts.url}>
                         Юбки
                     </Link>
                     <Link
@@ -70,10 +64,7 @@ class ShowcaseTshirtsW extends React.Component {
                 </nav>
                 <div className={style.div}>
                     <header className={style.header}>
-                        <Link
-                            className={style.ref}
-                            to={URLs.basket.url}
-                        >
+                        <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
                             <span className={style.text}>Корзина (0)</span>
                         </Link>

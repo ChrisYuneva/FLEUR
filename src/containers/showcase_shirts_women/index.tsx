@@ -9,7 +9,7 @@ import style from './style.css';
 import { URLs } from '../../__data__/urls';
 
 import asset from '../../asset';
-import ShowcaseShirtsM from "@main/containers/showcase_shirts_men";
+import ShowcaseShirtsM from '@main/containers/showcase_shirts_men';
 
 class ShowcaseShirtsW extends React.Component {
     render() {
@@ -20,10 +20,7 @@ class ShowcaseShirtsW extends React.Component {
                         FLEUR
                     </Link>
 
-                    <Link
-                        className={style.link}
-                        to={URLs.showcase_dress.url}
-                    >
+                    <Link className={style.link} to={URLs.showcase_dress.url}>
                         Платья
                     </Link>
                     <Link
@@ -56,10 +53,7 @@ class ShowcaseShirtsW extends React.Component {
                     >
                         Джинсы
                     </Link>
-                    <Link
-                        className={style.link}
-                        to={URLs.showcase_skirts.url}
-                    >
+                    <Link className={style.link} to={URLs.showcase_skirts.url}>
                         Юбки
                     </Link>
                     <Link
@@ -71,10 +65,7 @@ class ShowcaseShirtsW extends React.Component {
                 </nav>
                 <div className={style.div}>
                     <header className={style.header}>
-                        <Link
-                            className={style.ref}
-                            to={URLs.basket.url}
-                        >
+                        <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
                             <span className={style.text}>Корзина (0)</span>
                         </Link>
@@ -82,15 +73,15 @@ class ShowcaseShirtsW extends React.Component {
                     <div className={style.scan}>
                         <h2>Футболки</h2>
                         <span className={style.span}>
-                                Хорошо скроенные классические футболки — это
-                                универсальный предмет гардероба, который незаменим
-                                летом, а также может использоваться для создания
-                                образов в любое другое время года. Предлагаем
-                                женские футболки всевозможных расцветок и фасонов —
-                                выполненные в базовом черном и белом цветах или
-                                ярких оттенках, а также украшенные интересными
-                                принтами и оригинальными узорами.
-                            </span>
+                            Хорошо скроенные классические футболки — это
+                            универсальный предмет гардероба, который незаменим
+                            летом, а также может использоваться для создания
+                            образов в любое другое время года. Предлагаем
+                            женские футболки всевозможных расцветок и фасонов —
+                            выполненные в базовом черном и белом цветах или
+                            ярких оттенках, а также украшенные интересными
+                            принтами и оригинальными узорами.
+                        </span>
                         <div className={style.test}>
                             <Lot
                                 img={asset.tshirt1}
@@ -156,7 +147,7 @@ class ShowcaseShirtsW extends React.Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

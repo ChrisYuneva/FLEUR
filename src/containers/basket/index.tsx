@@ -28,25 +28,89 @@ class Basket extends React.Component {
                 </div>
                 <div className={style.show}>
                     <div className={style.showrow}>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}>
-                            <a className={style.del}>Удалить</a>
+                        <Lot
+                            img={asset.dress3}
+                            name={'Платье мини с блёстками'}
+                            price={'3 299 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
                         </Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot
+                            img={asset.jackets_m_11}
+                            name={'Куртка из искусственной кожи'}
+                            price={'7 299 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
+                        <Lot
+                            img={asset.tshirt4}
+                            name={'Футболка с принтом'}
+                            price={'1 799 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
+                        <Lot
+                            img={asset.shirt_m_11}
+                            name={'Базовая рубашка плотно облегающего кроя'}
+                            price={'3 299 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
                     </div>
                     <div className={style.showrow}>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot
+                            img={asset.tshirt3}
+                            name={'Футболка со сборками'}
+                            price={'999 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
+                        <Lot
+                            img={asset.tshirt1}
+                            name={'Топ с подплечниками'}
+                            price={'1 199 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
+                        <Lot
+                            img={asset.shirt_m_9}
+                            name={'Рубашка с принтом "Здания"'}
+                            price={'3 299 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
+                        <Lot
+                            img={asset.dress11}
+                            name={'Короткое платье'}
+                            price={'2 999 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
                     </div>
                     <div className={style.showrow}>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
-                        <Lot img={asset.dress3} name={'Платье мини с блёстками'} price={'3 299 руб.'}></Lot>
+                        <Lot
+                            img={asset.dress12}
+                            name={'Платье с пайетками'}
+                            price={'6 999 руб.'}
+                        >
+                            <button className={style.del}>Удалить</button>
+                        </Lot>
                     </div>
+                </div>
+                <div className={style.score}>
+                    <Link
+                        className={style.continue}
+                        to={URLs.showcase_dress.url}
+                    >
+                        Продолжить покупки
+                    </Link>
+                    <h2>Итого: 15151 руб.</h2>
+                    <Link
+                        className={style.continue}
+                        to={URLs.showcase_dress.url}
+                    >
+                        Оформить заказ
+                    </Link>
                 </div>
             </div>
         );

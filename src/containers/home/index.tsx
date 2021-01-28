@@ -26,19 +26,13 @@ class Home extends React.Component {
                 </header>
 
                 <div className={style.arrow_div}>
-                    <Link
-                        className={style.arrow_d}
-                        to={URLs.home_man.url}
-                    >
+                    <Link className={style.arrow_d} to={URLs.home_man.url}>
                         <img src={asset.icon2} className={style.arrow} />
                         <span className={style.arrow_man}>Мужчины</span>
                     </Link>
                 </div>
 
-                <Link
-                    className={style.home}
-                    to={URLs.showcase_dress.url}
-                >
+                <Link className={style.home} to={URLs.showcase_dress.url}>
                     <div className={style.rectangle}>
                         <span className={style.home_s}>Перейти к покупкам</span>
                     </div>

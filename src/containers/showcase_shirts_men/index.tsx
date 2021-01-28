@@ -59,10 +59,7 @@ class ShowcaseShirtsM extends React.Component {
                 </nav>
                 <div className={style.div}>
                     <header className={style.header}>
-                        <Link
-                            className={style.ref}
-                            to={URLs.basket.url}
-                        >
+                        <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
                             <span className={style.text}>Корзина (0)</span>
                         </Link>
@@ -70,28 +67,39 @@ class ShowcaseShirtsM extends React.Component {
                     <div className={style.scan}>
                         <h2>Рубашки</h2>
                         <span className={style.span}>
-                            Качественные рубашки отличного покроя в разнообразных стилях. Элегантные и простые рубашки для рабочих будней, а для создания непринужденного образа в выходные дни — удобные повседневные модели.
+                            Качественные рубашки отличного покроя в
+                            разнообразных стилях. Элегантные и простые рубашки
+                            для рабочих будней, а для создания непринужденного
+                            образа в выходные дни — удобные повседневные модели.
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>
                                 <Lot
                                     img={asset.shirt_m_1}
-                                    name={'Джинсовая рубашка с декоративными швами'}
+                                    name={
+                                        'Джинсовая рубашка с декоративными швами'
+                                    }
                                     price={'2 299 руб.'}
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_2}
-                                    name={'Джинсовая рубашка с декоративными швами'}
+                                    name={
+                                        'Джинсовая рубашка с декоративными швами'
+                                    }
                                     price={'2 299 руб.'}
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_3}
-                                    name={'Рубашка из ткани с рельефным узором в полоску'}
+                                    name={
+                                        'Рубашка из ткани с рельефным узором в полоску'
+                                    }
                                     price={'3 299 руб.'}
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_4}
-                                    name={'Рубашка из ткани с рельефным узором в полоску'}
+                                    name={
+                                        'Рубашка из ткани с рельефным узором в полоску'
+                                    }
                                     price={'3 299 руб.'}
                                 ></Lot>
                             </div>
@@ -113,7 +121,9 @@ class ShowcaseShirtsM extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_8}
-                                    name={'Рубашка из немнущейся ткани с рельефным узором'}
+                                    name={
+                                        'Рубашка из немнущейся ткани с рельефным узором'
+                                    }
                                     price={'2 299 руб.'}
                                 ></Lot>
                             </div>
@@ -125,17 +135,21 @@ class ShowcaseShirtsM extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_10}
-                                    name={'Рубашка свободного кроя из хлопка и льна'}
+                                    name={
+                                        'Рубашка свободного кроя из хлопка и льна'
+                                    }
                                     price={'2 999 руб.'}
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_11}
-                                    name={'Базовая рубашка плотно облегающего кроя'}
+                                    name={
+                                        'Базовая рубашка плотно облегающего кроя'
+                                    }
                                     price={'3 299 руб.'}
                                 ></Lot>
                                 <Lot
                                     img={asset.shirt_m_12}
-                                    name={"Эластичная рубашка"}
+                                    name={'Эластичная рубашка'}
                                     price={'2 999 руб.'}
                                 ></Lot>
                             </div>
