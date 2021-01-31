@@ -33,7 +33,7 @@ class ShowcaseJacketsM extends React.Component {
                     </Link>
                     <Link
                         className={style.link}
-                        to={URLs.showcase_hoodies_women.url}
+                        to={URLs.showcase_hoodies_men.url}
                     >
                         Толстовки
                     </Link>
@@ -45,15 +45,12 @@ class ShowcaseJacketsM extends React.Component {
                     </Link>
                     <Link
                         className={style.link}
-                        to={URLs.showcase_jeans_women.url}
+                        to={URLs.showcase_jeans_men.url}
                     >
                         Джинсы
                     </Link>
-                    <Link
-                        className={style.link}
-                        to={URLs.showcase_accessories.url}
-                    >
-                        Аксессуары
+                    <Link className={style.link} to={URLs.showcase_dress.url}>
+                        Женщины
                     </Link>
                 </nav>
                 <div className={style.div}>

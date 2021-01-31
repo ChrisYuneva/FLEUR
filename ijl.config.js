@@ -80,13 +80,16 @@ module.exports = {
         'link.repos.showcase_dress':'/showcase_dress',
         'link.repos.home_man':'/home_man',
         'link.repos.showcase_tshirts_women':'/showcase_tshirts_women',
+        'link.repos.showcase_tshirts_men':'/showcase_tshirts_men',
         'link.repos.showcase_jackets_women':'/showcase_jackets_women',
         'link.repos.showcase_shirts_women':'/showcase_shirts_women',
         'link.repos.showcase_hoodies_women':'/showcase_hoodies_women',
+        'link.repos.showcase_hoodies_men':'/showcase_hoodies_men',
         'link.repos.showcase_jeans_women':'/showcase_jeans_women',
+        'link.repos.showcase_jeans_men':'/showcase_jeans_men',
         'link.repos.showcase_skirts':'/showcase_skirts',
         'link.repos.showcase_accessories':'/showcase_accessories',
         'link.repos.showcase_jackets_men':'/showcase_jackets_men',
-        'link.repos.showcase_shirts_men':'/showcase_shirts_men'
+        'link.repos.showcase_shirts_men':'/showcase_shirts_men',
     }
 }

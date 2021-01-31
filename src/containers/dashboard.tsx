@@ -4,22 +4,21 @@ import { Switch, Route, Link, Redirect } from 'react-router-dom';
 import { URLs } from '../__data__/urls';
 
 import Home from './home';
-
 import Basket from './basket';
-
 import ShowcaseDress from './showcase_dress';
-
 import ShowcaseTshirtsW from './showcase_tshirts_women';
-
+import ShowcaseTshirtsM from './showcase_tshirts_men';
 import ShowcaseJacketsW from './showcase_jackets_women';
-
 import HomeMans from './home_man';
-
 import ShowcaseJacketsM from './showcase_jackets_men';
-
 import ShowcaseShirtsM from './showcase_shirts_men';
-
 import ShowcaseShirtsW from './showcase_shirts_women';
+import ShowcaseHoodiesW from './showcase_hoodies_women';
+import ShowcaseJeansW from './showcase_jeans_women';
+import ShowcaseJeansM from './showcase_jeans_men';
+import ShowcaseSkirts from './showcase_skirts';
+import ShowcaseAccessories from './showcase_accessories';
+import ShowcaseHoodiesM from './showcase_hoodies_men';
 
 const Dashboard = () => (
     <Switch>
@@ -47,6 +46,10 @@ const Dashboard = () => (
             <ShowcaseTshirtsW />
         </Route>
 
+        <Route path={URLs.showcase_tshirts_men.url}>
+            <ShowcaseTshirtsM />
+        </Route>
+
         <Route path={URLs.showcase_jackets_women.url}>
             <ShowcaseJacketsW />
         </Route>
@@ -56,19 +59,27 @@ const Dashboard = () => (
         </Route>
 
         <Route path={URLs.showcase_hoodies_women.url}>
-            <p>Толстовки женские</p>
+            <ShowcaseHoodiesW />
+        </Route>
+
+        <Route path={URLs.showcase_hoodies_men.url}>
+            <ShowcaseHoodiesM />
         </Route>
 
         <Route path={URLs.showcase_jeans_women.url}>
-            <p>Джинсы женские</p>
+            <ShowcaseJeansW />
+        </Route>
+
+        <Route path={URLs.showcase_jeans_men.url}>
+            <ShowcaseJeansM />
         </Route>
 
         <Route path={URLs.showcase_skirts.url}>
-            <p>Юбки</p>
+            <ShowcaseSkirts />
         </Route>
 
         <Route path={URLs.showcase_accessories.url}>
-            <p>Аксессуары</p>
+            <ShowcaseAccessories />
         </Route>
 
         <Route path={URLs.showcase_jackets_men.url}>

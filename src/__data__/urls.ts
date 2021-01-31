@@ -16,6 +16,9 @@ export const URLs = {
     showcase_tshirts_women: {
         url: navigations['link.repos.showcase_tshirts_women'],
     },
+    showcase_tshirts_men: {
+        url: navigations['link.repos.showcase_tshirts_men'],
+    },
     showcase_jackets_women: {
         url: navigations['link.repos.showcase_jackets_women'],
     },
@@ -25,8 +28,14 @@ export const URLs = {
     showcase_hoodies_women: {
         url: navigations['link.repos.showcase_hoodies_women'],
     },
+    showcase_hoodies_men: {
+        url: navigations['link.repos.showcase_hoodies_men'],
+    },
     showcase_jeans_women: {
         url: navigations['link.repos.showcase_jeans_women'],
+    },
+    showcase_jeans_men: {
+        url: navigations['link.repos.showcase_jeans_men'],
     },
     showcase_skirts: {
         url: navigations['link.repos.showcase_skirts'],

@@ -78,7 +78,7 @@
         padding-left: 30px;
         margin-top: 40px;
 
-        span {
+        .span {
             max-width: 700px;
         }
     }

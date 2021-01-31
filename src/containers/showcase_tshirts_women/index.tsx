@@ -78,79 +78,78 @@ class ShowcaseTshirtsW extends React.Component {
                             образов в любое другое время года. Предлагаем
                             женские футболки всевозможных расцветок и фасонов —
                             выполненные в базовом черном и белом цветах или
-                            ярких оттенках, а также украшенные интересными
-                            принтами и оригинальными узорами.
+                            ярких оттенках.
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.tshirt1}
+                                    img={asset.tshirt_w_1}
                                     name={'Топ с подплечниками'}
                                     price={'1 199 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt2}
+                                    img={asset.tshirt_w_2}
                                     name={'Укороченная футболка'}
                                     price={'1 599 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt3}
+                                    img={asset.tshirt_w_3}
                                     name={'Футболка со сборками'}
                                     price={'999 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt4}
+                                    img={asset.tshirt_w_4}
                                     name={'Футболка с принтом'}
                                     price={'1 799 руб.'}
                                 ></Lot>
                             </div>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.tshirt5}
+                                    img={asset.tshirt_w_5}
                                     name={'Укороченная футболка с принтом'}
                                     price={'1 799 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt6}
+                                    img={asset.tshirt_w_6}
                                     name={'Футболка ART & DECO POTTERY'}
                                     price={'1 799 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt7}
+                                    img={asset.tshirt_w_7}
                                     name={'Боди в рубчик'}
                                     price={'1 499 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt8}
+                                    img={asset.tshirt_w_8}
                                     name={'Жаккардовый топ'}
                                     price={'1 799 руб.'}
                                 ></Lot>
                             </div>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.tshirt9}
+                                    img={asset.tshirt_w_9}
                                     name={'Топ в рубчик со сборкой'}
                                     price={'899 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt10}
+                                    img={asset.tshirt_w_10}
                                     name={'Боди с пуговицами'}
                                     price={'1 199 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt11}
+                                    img={asset.tshirt_w_11}
                                     name={'Базовая футболка из хлопка'}
                                     price={'599 руб.'}
                                 ></Lot>
                                 <Lot
-                                    img={asset.tshirt12}
+                                    img={asset.tshirt_w_12}
                                     name={"Футболка с принтом 'YALE'"}
                                     price={'1 799 руб.'}
                                 ></Lot>
                             </div>
                             <div className={style.showrow}>
                                 <Lot
-                                    img={asset.tshirt13}
+                                    img={asset.tshirt_w_13}
                                     name={'Укороченная футболка'}
                                     price={'1 199 руб.'}
                                 ></Lot>

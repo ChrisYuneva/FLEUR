@@ -43,7 +43,7 @@ class Basket extends React.Component {
                             <button className={style.del}>Удалить</button>
                         </Lot>
                         <Lot
-                            img={asset.tshirt4}
+                            img={asset.tshirt_w_4}
                             name={'Футболка с принтом'}
                             price={'1 799 руб.'}
                         >
@@ -59,14 +59,14 @@ class Basket extends React.Component {
                     </div>
                     <div className={style.showrow}>
                         <Lot
-                            img={asset.tshirt3}
+                            img={asset.tshirt_w_3}
                             name={'Футболка со сборками'}
                             price={'999 руб.'}
                         >
                             <button className={style.del}>Удалить</button>
                         </Lot>
                         <Lot
-                            img={asset.tshirt1}
+                            img={asset.tshirt_w_1}
                             name={'Топ с подплечниками'}
                             price={'1 199 руб.'}
                         >

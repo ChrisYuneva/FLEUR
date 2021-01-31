@@ -40,7 +40,8 @@
     .text {
         //background-color: #e6c49c;
         border: 1px solid black;
-        color: black;
+        //background-color: black;
+        //color: white;
         font-size: 16px;
         padding: 8px;
         //padding: 16px 32px;
@@ -64,6 +65,10 @@
     opacity: 1;
 }
 
+.text:hover {
+    background-color: black;
+    color: white;
+}
 .showlittle:nth-child(4){
     margin-right: 0;
 }

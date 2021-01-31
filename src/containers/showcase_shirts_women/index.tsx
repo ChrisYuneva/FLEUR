@@ -62,6 +62,12 @@ class ShowcaseShirtsW extends React.Component {
                     >
                         Аксессуары
                     </Link>
+                    <Link
+                        className={style.link}
+                        to={URLs.showcase_jackets_men.url}
+                    >
+                        Мужчины
+                    </Link>
                 </nav>
                 <div className={style.div}>
                     <header className={style.header}>
@@ -71,78 +77,77 @@ class ShowcaseShirtsW extends React.Component {
                         </Link>
                     </header>
                     <div className={style.scan}>
-                        <h2>Футболки</h2>
+                        <h2>Рубашки</h2>
                         <span className={style.span}>
-                            Хорошо скроенные классические футболки — это
-                            универсальный предмет гардероба, который незаменим
-                            летом, а также может использоваться для создания
-                            образов в любое другое время года. Предлагаем
-                            женские футболки всевозможных расцветок и фасонов —
-                            выполненные в базовом черном и белом цветах или
-                            ярких оттенках, а также украшенные интересными
-                            принтами и оригинальными узорами.
+                            Составляйте стильные ансамбли с белоснежными рубашками, прозрачными блузками и легкими туниками. Чтобы создать всегда актуальный и безупречный образ, который легко преобразить, сочетайте любимые изделия с подходящими аксессуарами.
                         </span>
-                        <div className={style.test}>
-                            <Lot
-                                img={asset.tshirt1}
-                                name={'Топ с подплечниками'}
-                                price={'1 199 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt2}
-                                name={'Укороченная футболка'}
-                                price={'1 599 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt3}
-                                name={'Футболка со сборками'}
-                                price={'999 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt4}
-                                name={'Футболка с принтом'}
-                                price={'1 799 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt1}
-                                name={'Топ с подплечниками'}
-                                price={'1 199 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt2}
-                                name={'Укороченная футболка'}
-                                price={'1 599 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt3}
-                                name={'Футболка со сборками'}
-                                price={'999 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt4}
-                                name={'Футболка с принтом'}
-                                price={'1 799 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt1}
-                                name={'Топ с подплечниками'}
-                                price={'1 199 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt2}
-                                name={'Укороченная футболка'}
-                                price={'1 599 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt3}
-                                name={'Футболка со сборками'}
-                                price={'999 руб.'}
-                            ></Lot>
-                            <Lot
-                                img={asset.tshirt4}
-                                name={'Футболка с принтом'}
-                                price={'1 799 руб.'}
-                            ></Lot>
+                        <div className={style.show}>
+                            <div className={style.showrow}>
+                                <Lot
+                                    img={asset.shirt_w_1}
+                                    name={'Рубашка из поплина в полоску'}
+                                    price={'3 299 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_2}
+                                    name={'Рубашка с анималистичным принтом'}
+                                    price={'2 999 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_3}
+                                    name={'Рубашка из струящейся ткани с карманами'}
+                                    price={'3 299 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_4}
+                                    name={'Рубашка из фланели в клетку'}
+                                    price={'2 999 руб.'}
+                                ></Lot>
+                            </div>
+                            <div className={style.showrow}>
+                                <Lot
+                                    img={asset.shirt_w_5}
+                                    name={'Рубашка с карманом из сатина'}
+                                    price={'2 299 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_6}
+                                    name={'Рубашка из поплина'}
+                                    price={'2 299 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_7}
+                                    name={'Атласная рубашка оверсайз'}
+                                    price={'2 999 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_8}
+                                    name={'Рубашка в полоску с блестящей нитью'}
+                                    price={'2 299 руб.'}
+                                ></Lot>
+                            </div>
+                            <div className={style.showrow}>
+                                <Lot
+                                    img={asset.shirt_w_9}
+                                    name={'Трикотажная рубашка с разрывами'}
+                                    price={'2 199 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_10}
+                                    name={'Рубашка оверсайз с анималистичным принтом'}
+                                    price={'2 599 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_11}
+                                    name={'Рубашка из сатина'}
+                                    price={'2 599 руб.'}
+                                ></Lot>
+                                <Lot
+                                    img={asset.shirt_w_12}
+                                    name={'Рубашка с карманом'}
+                                    price={'3 299 руб.'}
+                                ></Lot>
+                            </div>
                         </div>
                     </div>
                 </div>
