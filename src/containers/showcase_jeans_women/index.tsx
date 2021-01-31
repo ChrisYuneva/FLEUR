@@ -79,7 +79,9 @@ class ShowcaseJeansW extends React.Component {
                     <div className={style.scan}>
                         <h2>Джинсы</h2>
                         <span className={style.span}>
-                            У нас есть женские джинсы любого покроя и стиля — от изделий с низкой талией до облегающих и расклешенных моделей. Здесь вы точно найдете подходящие джинсы!
+                            У нас есть женские джинсы любого покроя и стиля — от
+                            изделий с низкой талией до облегающих и расклешенных
+                            моделей. Здесь вы точно найдете подходящие джинсы!
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>
@@ -100,7 +102,9 @@ class ShowcaseJeansW extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.jeans_w_4}
-                                    name={'Джинсы прямого кроя с высокой посадкой и разрезами'}
+                                    name={
+                                        'Джинсы прямого кроя с высокой посадкой и разрезами'
+                                    }
                                     price={'2 999 руб.'}
                                 ></Lot>
                             </div>
@@ -112,12 +116,16 @@ class ShowcaseJeansW extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.jeans_w_6}
-                                    name={'Прямые джинсы полной длины с высокой посадкой'}
+                                    name={
+                                        'Прямые джинсы полной длины с высокой посадкой'
+                                    }
                                     price={'2 999 руб.'}
                                 ></Lot>
                                 <Lot
                                     img={asset.jeans_w_7}
-                                    name={'Укороченные джинсы с высокой посадкой и широкими штанинами'}
+                                    name={
+                                        'Укороченные джинсы с высокой посадкой и широкими штанинами'
+                                    }
                                     price={'2 999 руб.'}
                                 ></Lot>
                                 <Lot

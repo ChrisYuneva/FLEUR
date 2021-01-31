@@ -79,7 +79,8 @@ class ShowcaseAccessories extends React.Component {
                     <div className={style.scan}>
                         <h2>Аксессуары</h2>
                         <span className={style.span}>
-                            Обновите свой образ стильными аксуссуарами из нашей коллекции.
+                            Обновите свой образ стильными аксуссуарами из нашей
+                            коллекции.
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>
@@ -117,7 +118,9 @@ class ShowcaseAccessories extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.accessories_7}
-                                    name={'Платок из мягкой ткани с геометрическим узором'}
+                                    name={
+                                        'Платок из мягкой ткани с геометрическим узором'
+                                    }
                                     price={'2 299 руб.'}
                                 ></Lot>
                                 <Lot
@@ -144,7 +147,9 @@ class ShowcaseAccessories extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.accessories_12}
-                                    name={'Жесткое ожерелье с натуральным жемчугом'}
+                                    name={
+                                        'Жесткое ожерелье с натуральным жемчугом'
+                                    }
                                     price={'1 799 руб.'}
                                 ></Lot>
                             </div>
@@ -161,7 +166,9 @@ class ShowcaseAccessories extends React.Component {
                                 ></Lot>
                                 <Lot
                                     img={asset.accessories_15}
-                                    name={'Кожаное ожерелье с натуральным жемчугом'}
+                                    name={
+                                        'Кожаное ожерелье с натуральным жемчугом'
+                                    }
                                     price={'1 499 руб.'}
                                 ></Lot>
                             </div>
