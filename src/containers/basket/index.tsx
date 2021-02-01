@@ -9,112 +9,107 @@ import asset from '../../asset';
 
 import { Lot } from '../../components';
 
-class Basket extends React.Component {
-    render() {
-        return (
-            <div className={style.wrapper}>
-                <header className={style.header}>
-                    <Link className={style.name} to={URLs.home.url}>
-                        FLEUR
-                    </Link>
-                    {/*<Link className={style.ref} to={URLs.basket.url}>*/}
-                    {/*    <img src={asset.icon} className={style.box} />*/}
-                    {/*    <span className={style.text}>Корзина (0)</span>*/}
-                    {/*</Link>*/}
-                </header>
-                <div className={style.scan}>
-                    <h2>Корзина</h2>
-                    <span>Количество товаров: </span>
-                </div>
-                <div className={style.show}>
-                    <div className={style.showrow}>
-                        <Lot
-                            img={asset.dress3}
-                            name={'Платье мини с блёстками'}
-                            price={'3 299 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                        <Lot
-                            img={asset.jackets_m_11}
-                            name={'Куртка из искусственной кожи'}
-                            price={'7 299 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                        <Lot
-                            img={asset.tshirt_w_4}
-                            name={'Футболка с принтом'}
-                            price={'1 799 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                        <Lot
-                            img={asset.shirt_m_11}
-                            name={'Базовая рубашка плотно облегающего кроя'}
-                            price={'3 299 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                    </div>
-                    <div className={style.showrow}>
-                        <Lot
-                            img={asset.tshirt_w_3}
-                            name={'Футболка со сборками'}
-                            price={'999 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                        <Lot
-                            img={asset.tshirt_w_1}
-                            name={'Топ с подплечниками'}
-                            price={'1 199 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                        <Lot
-                            img={asset.shirt_m_9}
-                            name={'Рубашка с принтом "Здания"'}
-                            price={'3 299 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                        <Lot
-                            img={asset.dress11}
-                            name={'Короткое платье'}
-                            price={'2 999 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                    </div>
-                    <div className={style.showrow}>
-                        <Lot
-                            img={asset.dress12}
-                            name={'Платье с пайетками'}
-                            price={'6 999 руб.'}
-                        >
-                            <button className={style.del}>Удалить</button>
-                        </Lot>
-                    </div>
-                </div>
-                <div className={style.score}>
-                    <Link
-                        className={style.continue}
-                        to={URLs.showcase_dress.url}
+import { useTranslation } from 'react-i18next';
+
+function Basket() {
+    const { t, i18n } = useTranslation();
+    return (
+        <div className={style.wrapper}>
+            <header className={style.header}>
+                <Link className={style.name} to={URLs.home.url}>
+                    {t('repos.name')}
+                </Link>
+                {/*<Link className={style.ref} to={URLs.basket.url}>*/}
+                {/*    <img src={asset.icon} className={style.box} />*/}
+                {/*    <span className={style.text}>Корзина (0)</span>*/}
+                {/*</Link>*/}
+            </header>
+            <div className={style.scan}>
+                <h2>Корзина</h2>
+                <span>Количество товаров: </span>
+            </div>
+            <div className={style.show}>
+                <div className={style.showrow}>
+                    <Lot
+                        img={asset.dress3}
+                        name={'Платье мини с блёстками'}
+                        price={'3 299 руб.'}
                     >
-                        Продолжить покупки
-                    </Link>
-                    <h2>Итого: 15151 руб.</h2>
-                    <Link
-                        className={style.continue}
-                        to={URLs.showcase_dress.url}
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                    <Lot
+                        img={asset.jackets_m_11}
+                        name={'Куртка из искусственной кожи'}
+                        price={'7 299 руб.'}
                     >
-                        Оформить заказ
-                    </Link>
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                    <Lot
+                        img={asset.tshirt_w_4}
+                        name={'Футболка с принтом'}
+                        price={'1 799 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                    <Lot
+                        img={asset.shirt_m_11}
+                        name={'Базовая рубашка плотно облегающего кроя'}
+                        price={'3 299 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                </div>
+                <div className={style.showrow}>
+                    <Lot
+                        img={asset.tshirt_w_3}
+                        name={'Футболка со сборками'}
+                        price={'999 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                    <Lot
+                        img={asset.tshirt_w_1}
+                        name={'Топ с подплечниками'}
+                        price={'1 199 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                    <Lot
+                        img={asset.shirt_m_9}
+                        name={'Рубашка с принтом "Здания"'}
+                        price={'3 299 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                    <Lot
+                        img={asset.dress11}
+                        name={'Короткое платье'}
+                        price={'2 999 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
+                </div>
+                <div className={style.showrow}>
+                    <Lot
+                        img={asset.dress12}
+                        name={'Платье с пайетками'}
+                        price={'6 999 руб.'}
+                    >
+                        <button className={style.del}>Удалить</button>
+                    </Lot>
                 </div>
             </div>
-        );
-    }
+            <div className={style.score}>
+                <Link className={style.continue} to={URLs.showcase_dress.url}>
+                    Продолжить покупки
+                </Link>
+                <h2>Итого: 15151 руб.</h2>
+                <Link className={style.continue} to={URLs.showcase_dress.url}>
+                    Оформить заказ
+                </Link>
+            </div>
+        </div>
+    );
 }
 
 export default Basket;
