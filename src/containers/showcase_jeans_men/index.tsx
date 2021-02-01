@@ -52,7 +52,7 @@ class ShowcaseJeansM extends React.Component {
                     <header className={style.header}>
                         <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
-                            <span className={style.text}>Корзина (0)</span>
+                            <a className={style.text}>Корзина (0)</a>
                         </Link>
                     </header>
                     <div className={style.scan}>
@@ -64,9 +64,7 @@ class ShowcaseJeansM extends React.Component {
                             подойдет для вашего стиля и типа фигуры. Наши джинсы
                             представлены во всевозможных фасонах — от
                             классических прямых, выдержанных в синих оттенках,
-                            до узких черных. На ваш выбор представлены модели
-                            светлых и темных расцветок, с рваными элементами или
-                            элегантной отделкой.
+                            до узких черных.
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>

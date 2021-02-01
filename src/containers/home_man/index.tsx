@@ -25,12 +25,11 @@ class HomeMans extends React.Component {
                     {/*    <span className={style.text}>Корзина (0)</span>*/}
                     {/*</a>*/}
                 </div>
-                {/*<img src={backgroung} className={style.back}/>*/}
 
                 <div className={style.arrow_div}>
                     <Link className={style.arrow_d} to={URLs.home.url}>
                         <img src={asset.icon4} className={style.arrow} />
-                        <span className={style.arrow_man}>Женщины</span>
+                        <a className={style.arrow_man}>Женщины</a>
                     </Link>
                 </div>
 

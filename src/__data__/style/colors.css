@@ -1,5 +1,5 @@
 :root {
-    —white: white;
-    —black-7: #20232a;
-    -main: #deb585;
+    --white: white;
+    --black: black;
+    --main: #deb585;
 }

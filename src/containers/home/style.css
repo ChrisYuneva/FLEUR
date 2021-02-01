@@ -2,6 +2,8 @@
 @import url('https://allfont.ru/allfont.css?fonts=cinzel');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import '../../__data__/style/sizes.css';
+@import '../../__data__/style/colors.css';
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -50,20 +52,20 @@
 
         .name {
             display: flex;
-            font-size: 48px;
+            font-size: var(--offset-lg);
             align-items: center;
             text-decoration: none;
-            color: white;
+            color: var(--white);
             font-style: normal;
             font-weight: lighter;
-            padding-left: 32px;
+            padding-left: var(--offset-bmd);
         }
 
         .ref {
             display: flex;
             height: 30px;
             //width: 138px;
-            color: white;
+            color: var(--white);
             align-items: center;
             text-decoration: none;
             //padding: 0;
@@ -75,8 +77,8 @@
         }
 
         .text {
-            padding-left: 8px;
-            font-size: 16px;
+            padding-left: var(--ofset-xs);
+            font-size: var(--offset-sm);
         }
     }
 
@@ -92,7 +94,7 @@
             flex-direction: row;
             height: 35px;
             width: 150px;
-            color: white;
+            color: var(--white);
             right: 0;
             margin: 0;
             padding: 0;
@@ -116,7 +118,7 @@
                 height: 50px;
                 background: transparent;
                 border: 2px solid white;
-                color: white;
+                color: var(--white);
                 text-decoration: none;
                 align-items: center;
                 justify-content: center;

@@ -28,7 +28,7 @@ class Home extends React.Component {
                 <div className={style.arrow_div}>
                     <Link className={style.arrow_d} to={URLs.home_man.url}>
                         <img src={asset.icon2} className={style.arrow} />
-                        <span className={style.arrow_man}>Мужчины</span>
+                        <a className={style.arrow_man}>Мужчины</a>
                     </Link>
                 </div>
 

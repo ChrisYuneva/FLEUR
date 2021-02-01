@@ -1,7 +1,10 @@
+@import '../../__data__/style/sizes.css';
+@import '../../__data__/style/colors.css';
+
 .showlittle {
     display: flex;
     flex-direction: column;
-    margin-right: 32px;
+    margin-right: var(--offset-bmd);
     //max-width: 100vw;
 
     .image {
@@ -40,10 +43,8 @@
     .text {
         //background-color: #e6c49c;
         border: 1px solid black;
-        //background-color: black;
-        //color: white;
-        font-size: 16px;
-        padding: 8px;
+        font-size: var(--offset-sm);
+        padding: var(--ofset-xs);
         //padding: 16px 32px;
     }
 
@@ -66,8 +67,10 @@
 }
 
 .text:hover {
-    background-color: black;
-    color: white;
+    //background-color: black;
+    background-color: #e6c49c;
+    color: black;
+    //color: #e6c49c;
 }
 .showlittle:nth-child(4){
     margin-right: 0;

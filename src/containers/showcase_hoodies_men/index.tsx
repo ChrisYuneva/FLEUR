@@ -57,7 +57,7 @@ class ShowcaseHoodiesM extends React.Component {
                     <header className={style.header}>
                         <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
-                            <span className={style.text}>Корзина (0)</span>
+                            <a className={style.text}>Корзина (0)</a>
                         </Link>
                     </header>
                     <div className={style.scan}>
@@ -65,16 +65,8 @@ class ShowcaseHoodiesM extends React.Component {
                         <span className={style.span}>
                             Чтобы не замерзнуть в холодные дни, дополните ваш
                             повседневный гардероб мужскими худи и толстовками из
-                            нашей коллекции. В будние дни сделайте свой образ
-                            теплее с помощью худи нейтрального цвета на
-                            застежке-молнии, а на выходных отдайте предпочтение
-                            стильной толстовке с интересным принтом. Чтобы образ
-                            смотрелся непринужденно, но при этом стильно,
-                            наденьте серое или черное худи вместе с вашими
-                            любимыми джинсами и кроссовками. В нашей коллекции
-                            худи и толстовок вы непременно найдете модели,
-                            которые стильно дополнят ваш образ и согреют в
-                            холодную погоду.
+                            нашей коллекции. Здесь вы непременно найдете модели,
+                            которые стильно дополнят ваш образ!
                         </span>
                         <div className={style.show}>
                             <div className={style.showrow}>

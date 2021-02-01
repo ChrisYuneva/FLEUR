@@ -61,12 +61,18 @@ class ShowcaseSkirts extends React.Component {
                     >
                         Аксессуары
                     </Link>
+                    <Link
+                        className={style.link}
+                        to={URLs.showcase_jackets_men.url}
+                    >
+                        Мужчины
+                    </Link>
                 </nav>
                 <div className={style.div}>
                     <header className={style.header}>
                         <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
-                            <span className={style.text}>Корзина (0)</span>
+                            <a className={style.text}>Корзина (0)</a>
                         </Link>
                     </header>
                     <div className={style.scan}>

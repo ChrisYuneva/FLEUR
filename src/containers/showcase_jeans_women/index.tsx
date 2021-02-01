@@ -73,7 +73,7 @@ class ShowcaseJeansW extends React.Component {
                     <header className={style.header}>
                         <Link className={style.ref} to={URLs.basket.url}>
                             <img src={asset.icon3} className={style.box} />
-                            <span className={style.text}>Корзина (0)</span>
+                            <a className={style.text}>Корзина (0)</a>
                         </Link>
                     </header>
                     <div className={style.scan}>
