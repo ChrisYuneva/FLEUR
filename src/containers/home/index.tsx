@@ -19,10 +19,10 @@ class Home extends React.Component {
                     <Link className={style.name} to={URLs.home.url}>
                         FLEUR
                     </Link>
-                    <Link className={style.ref} to={URLs.basket.url}>
-                        <img src={asset.icon} className={style.box} />
-                        <span className={style.text}>Корзина (0)</span>
-                    </Link>
+                    {/*<Link className={style.ref} to={URLs.basket.url}>*/}
+                    {/*    <img src={asset.icon} className={style.box} />*/}
+                    {/*    <span className={style.text}>Корзина (0)</span>*/}
+                    {/*</Link>*/}
                 </header>
 
                 <div className={style.arrow_div}>
