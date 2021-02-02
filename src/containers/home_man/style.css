@@ -152,20 +152,6 @@
     font-family: Roboto;
 }
 
-/*.arrow_d {
-    /*position: absolute;*/
-/*height: 35px;
-width: 150px;
-color: white;
-font-family: Roboto;
-right: 0;
-top: 50%;
-margin: 0;
-padding: 0;
-align-items: center;
-display: flex;
-cursor: pointer;
-}*/
 
 .arrow {
     width: 55px;
@@ -177,17 +163,4 @@ cursor: pointer;
 }
 
 
-/*.ref {
-    position: absolute;
-    height: 30px;
-    width: 120px;
-    color: white;
-    right: 0;
-    top: 0;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}*/
 
