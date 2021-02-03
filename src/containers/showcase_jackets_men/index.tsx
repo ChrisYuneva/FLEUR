@@ -32,7 +32,7 @@ function ShowcaseJacketsM() {
                 </Link>
                 <Link
                     className={style.link}
-                    to={URLs.showcase_tshirts_women.url}
+                    to={URLs.showcase_tshirts_men.url}
                 >
                     Футболки
                 </Link>
