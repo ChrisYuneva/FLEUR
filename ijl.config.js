@@ -91,5 +91,6 @@ module.exports = {
         'link.repos.showcase_accessories':'/showcase_accessories',
         'link.repos.showcase_jackets_men':'/showcase_jackets_men',
         'link.repos.showcase_shirts_men':'/showcase_shirts_men',
+        'link.repos.ordering':'/ordering',
     }
 }

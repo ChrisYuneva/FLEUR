@@ -18,42 +18,39 @@ function ShowcaseHoodiesM() {
         <div className={style.wrapper}>
             <nav className={style.nav}>
                 <Link className={style.name} to={URLs.home.url}>
-                    FLEUR
+                    {t('repos.name')}
                 </Link>
 
                 <Link className={style.link} to={URLs.showcase_jackets_men.url}>
-                    Куртки
+                    {t('repos.jackets')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_shirts_men.url}>
-                    Рубашки
+                    {t('repos.shirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_hoodies_men.url}>
-                    Толстовки
+                    {t('repos.hoodies')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_tshirts_men.url}>
-                    Футболки
+                    {t('repos.t-shirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_jeans_men.url}>
-                    Джинсы
+                    {t('repos.jeans')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_dress.url}>
-                    Женщины
+                    {t('repos.women')}
                 </Link>
             </nav>
             <div className={style.div}>
                 <header className={style.header}>
                     <Link className={style.ref} to={URLs.basket.url}>
                         <img src={asset.icon3} className={style.box} />
-                        <a className={style.text}>Корзина (0)</a>
+                        <a className={style.text}>{t('repos.basket')} (0)</a>
                     </Link>
                 </header>
                 <div className={style.scan}>
-                    <h2>Толстовки</h2>
+                    <h2>{t('repos.hoodies')}</h2>
                     <span className={style.span}>
-                        Чтобы не замерзнуть в холодные дни, дополните ваш
-                        повседневный гардероб мужскими худи и толстовками из
-                        нашей коллекции. Здесь вы непременно найдете модели,
-                        которые стильно дополнят ваш образ!
+                        {t('repos.caption.hoodies_m')}
                     </span>
                     <div className={style.show}>
                         <div className={style.showrow}>

@@ -19,6 +19,7 @@ import ShowcaseJeansM from './showcase_jeans_men';
 import ShowcaseSkirts from './showcase_skirts';
 import ShowcaseAccessories from './showcase_accessories';
 import ShowcaseHoodiesM from './showcase_hoodies_men';
+import Order from './ordering';
 
 const Dashboard = () => (
     <Switch>
@@ -88,6 +89,10 @@ const Dashboard = () => (
 
         <Route path={URLs.showcase_shirts_men.url}>
             <ShowcaseShirtsM />
+        </Route>
+
+        <Route path={URLs.ordering.url}>
+            <Order />
         </Route>
 
         <Route path="*">

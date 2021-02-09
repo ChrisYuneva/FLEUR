@@ -18,45 +18,39 @@ function ShowcaseJacketsM() {
         <div className={style.wrapper}>
             <nav className={style.nav}>
                 <Link className={style.name} to={URLs.home.url}>
-                    FLEUR
+                    {t('repos.name')}
                 </Link>
 
                 <Link className={style.link} to={URLs.showcase_jackets_men.url}>
-                    Куртки
+                    {t('repos.jackets')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_shirts_men.url}>
-                    Рубашки
+                    {t('repos.shirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_hoodies_men.url}>
-                    Толстовки
+                    {t('repos.hoodies')}
                 </Link>
-                <Link
-                    className={style.link}
-                    to={URLs.showcase_tshirts_women.url}
-                >
-                    Футболки
+                <Link className={style.link} to={URLs.showcase_tshirts_men.url}>
+                    {t('repos.t-shirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_jeans_men.url}>
-                    Джинсы
+                    {t('repos.jeans')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_dress.url}>
-                    Женщины
+                    {t('repos.women')}
                 </Link>
             </nav>
             <div className={style.div}>
                 <header className={style.header}>
                     <Link className={style.ref} to={URLs.basket.url}>
                         <img src={asset.icon3} className={style.box} />
-                        <a className={style.text}>Корзина (0)</a>
+                        <a className={style.text}>{t('repos.basket')} (0)</a>
                     </Link>
                 </header>
                 <div className={style.scan}>
-                    <h2>Куртки</h2>
+                    <h2>{t('repos.jackets')}</h2>
                     <span className={style.span}>
-                        Верхняя одежда может быть стильной, и наши мужские
-                        куртки и пальто — яркое тому подтверждение. Независимо
-                        от того, какой стиль вы предпочитаете, у нас вы найдете
-                        новинки для любого сезона и на все случаи жизни.
+                        {t('repos.caption.jackets_m')}
                     </span>
                     <div className={style.show}>
                         <div className={style.showrow}>

@@ -52,4 +52,7 @@ export const URLs = {
     showcase_shirts_men: {
         url: navigations['link.repos.showcase_shirts_men'],
     },
+    ordering: {
+        url: navigations['link.repos.ordering'],
+    },
 };

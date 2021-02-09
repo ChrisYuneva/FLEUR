@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import style from './style.css';
-
 import { URLs } from '../../__data__/urls';
-
 import asset from '../../asset';
-
 import { Lot } from '../../components';
-
 import { useTranslation } from 'react-i18next';
 
 function Basket() {
@@ -104,7 +99,7 @@ function Basket() {
                     Продолжить покупки
                 </Link>
                 <h2>Итого: 15151 руб.</h2>
-                <Link className={style.continue} to={URLs.showcase_dress.url}>
+                <Link className={style.continue} to={URLs.ordering.url}>
                     Оформить заказ
                 </Link>
             </div>
