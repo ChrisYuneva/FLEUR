@@ -18,63 +18,59 @@ function ShowcaseJeansW() {
         <div className={style.wrapper}>
             <nav className={style.nav}>
                 <Link className={style.name} to={URLs.home.url}>
-                    FLEUR
+                    {t('repos.name')}
                 </Link>
-
-                {/* eslint-disable-next-line react/jsx-no-undef */}
                 <Link className={style.link} to={URLs.showcase_dress.url}>
-                    Платья
+                    {t('repos.dress')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_jackets_women.url}
                 >
-                    Куртки
+                    {t('repos.jackets')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_shirts_women.url}
                 >
-                    Рубашки
+                    {t('repos.shirts')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_hoodies_women.url}
                 >
-                    Толстовки
+                    {t('repos.hoodies')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_tshirts_women.url}
                 >
-                    Футболки
+                    {t('repos.t-shirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_jeans_women.url}>
-                    Джинсы
+                    {t('repos.jeans')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_skirts.url}>
-                    Юбки
+                    {t('repos.skirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_accessories.url}>
-                    Аксессуары
+                    {t('repos.accessories')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_jackets_men.url}>
-                    Мужчины
+                    {t('repos.men')}
                 </Link>
             </nav>
             <div className={style.div}>
                 <header className={style.header}>
                     <Link className={style.ref} to={URLs.basket.url}>
                         <img src={asset.icon3} className={style.box} />
-                        <a className={style.text}>Корзина (0)</a>
+                        <a className={style.text}>{t('repos.basket')} (0)</a>
                     </Link>
                 </header>
                 <div className={style.scan}>
-                    <h2>Джинсы</h2>
+                    <h2>{t('repos.jeans')}</h2>
                     <span className={style.span}>
-                        У нас есть женские джинсы любого покроя и стиля — от
-                        изделий с низкой талией до облегающих и расклешенных
-                        моделей. Здесь вы точно найдете подходящие джинсы!
+                        {t('repos.caption.jeans_w')}
                     </span>
                     <div className={style.show}>
                         <div className={style.showrow}>

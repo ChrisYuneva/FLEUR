@@ -15,28 +15,21 @@ function Home() {
     return (
         <div className={style.wrapper}>
             <header className={style.header}>
-                {/*<div className={style.search}>*/}
-                {/*    <input className={style.line} type="text" id={style.search} placeholder="Поиск"/>*/}
-                {/*</div>*/}
                 <Link className={style.name} to={URLs.home.url}>
-                    FLEUR
+                    {t('repos.name')}
                 </Link>
-                {/*<Link className={style.ref} to={URLs.basket.url}>*/}
-                {/*    <img src={asset.icon} className={style.box} />*/}
-                {/*    <span className={style.text}>Корзина (0)</span>*/}
-                {/*</Link>*/}
             </header>
 
             <div className={style.arrow_div}>
                 <Link className={style.arrow_d} to={URLs.home_man.url}>
                     <img src={asset.icon2} className={style.arrow} />
-                    <a className={style.arrow_man}>Мужчины</a>
+                    <a className={style.arrow_man}>{t('repos.men')}</a>
                 </Link>
             </div>
 
             <Link className={style.home} to={URLs.showcase_dress.url}>
                 <div className={style.rectangle}>
-                    <span className={style.home_s}>Перейти к покупкам</span>
+                    <span className={style.home_s}>{t('repos.turn')}</span>
                 </div>
             </Link>
         </div>

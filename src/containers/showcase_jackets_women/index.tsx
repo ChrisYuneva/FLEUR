@@ -18,64 +18,59 @@ function ShowcaseJacketsW() {
         <div className={style.wrapper}>
             <nav className={style.nav}>
                 <Link className={style.name} to={URLs.home.url}>
-                    FLEUR
+                    {t('repos.name')}
                 </Link>
-
                 <Link className={style.link} to={URLs.showcase_dress.url}>
-                    Платья
+                    {t('repos.dress')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_jackets_women.url}
                 >
-                    Куртки
+                    {t('repos.jackets')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_shirts_women.url}
                 >
-                    Рубашки
+                    {t('repos.shirts')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_hoodies_women.url}
                 >
-                    Толстовки
+                    {t('repos.hoodies')}
                 </Link>
                 <Link
                     className={style.link}
                     to={URLs.showcase_tshirts_women.url}
                 >
-                    Футболки
+                    {t('repos.t-shirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_jeans_women.url}>
-                    Джинсы
+                    {t('repos.jeans')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_skirts.url}>
-                    Юбки
+                    {t('repos.skirts')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_accessories.url}>
-                    Аксессуары
+                    {t('repos.accessories')}
                 </Link>
                 <Link className={style.link} to={URLs.showcase_jackets_men.url}>
-                    Мужчины
+                    {t('repos.men')}
                 </Link>
             </nav>
             <div className={style.div}>
                 <header className={style.header}>
                     <Link className={style.ref} to={URLs.basket.url}>
                         <img src={asset.icon3} className={style.box} />
-                        <a className={style.text}>Корзина (0)</a>
+                        <a className={style.text}>{t('repos.basket')} (0)</a>
                     </Link>
                 </header>
                 <div className={style.scan}>
-                    <h2>Куртки</h2>
+                    <h2>{t('repos.jackets')}</h2>
                     <span className={style.span}>
-                        В наших модных пальто и куртках вы будете выглядеть
-                        стильно и забудете о холоде. Приталенные и объемные,
-                        длинные и короткие, однотонные черные и выдержанные в
-                        цветах сезона — пополните ваш гардероб куртками и пальто
-                        из нашей коллекции.
+                        {t('repos.caption.jackets_w')}
                     </span>
                     <div className={style.show}>
                         <div className={style.showrow}>
