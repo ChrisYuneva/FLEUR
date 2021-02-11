@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import '../../__data__/style/sizes.css';
+@import '../../__data__/style/colors.css';
 
 .wrapper {
     display: flex;
@@ -9,23 +10,26 @@
     height: 100vh;
     flex-direction: column;
     background: #deb585;
+    //justify-content: center;
+    //align-items: center;
 }
 
 .header {
-    min-height: 80px;
     display: flex;
     flex-direction: row;
+    //position: absolute;
+    height: 100px;
+    justify-content: space-between;
     align-items: center;
 }
-
 .name {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     font-size: var(--offset-lg);
+    align-items: center;
     text-decoration: none;
-    color: black;
-    margin-bottom: var(--offset-mlg);
-    padding-top: var(--offset-sm);
+    color: var(--black);
+    font-style: normal;
+    font-weight: lighter;
     padding-left: var(--offset-bmd);
 }
 
@@ -35,12 +39,62 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+
 }
 
 .form {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 800px;
-    width: 700px;
-    background-color: antiquewhite ;
+    height: 300px;
+    width: 900px;
+    background-color: #f5d4ae;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+
+
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+    //max-height: calc(100vh - 100px);
+    height: 100%;
+    width: 100vw;
+    border-color: #5285ec;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    display: flex;
+}
+.input {
+
+    padding-top: var(--offset-sm);
+
+    label{
+        margin-left: var(--offset-sm);
+    }
+    input {
+        margin-left: var(--ofset-xs);
+        border: none;
+        outline: none !important;
+        border-bottom: 1px solid black;
+        background: transparent;
+        width: 180px;
+        font-size: var(--offset-sm);
+        color: black;
+    }
+}
+
+.arrange {
+    margin-left: 230px;
+    width: 150px;
+    height: 50px;
+    font-size: var(--offset-sm);
+    background-color: var(--black);
+    color: var(--main);
+    font-weight: 600;
 }
