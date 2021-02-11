@@ -77,68 +77,68 @@ function ShowcaseShirtsW() {
                             <Lot
                                 img={asset.shirt_w_1}
                                 name={'Рубашка из поплина в полоску'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_2}
                                 name={'Рубашка с анималистичным принтом'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_3}
                                 name={'Рубашка из струящейся ткани с карманами'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_4}
                                 name={'Рубашка из фланели в клетку'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.shirt_w_5}
                                 name={'Рубашка с карманом из сатина'}
-                                price={'2 299 руб.'}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_6}
                                 name={'Рубашка из поплина'}
-                                price={'2 299 руб.'}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_7}
                                 name={'Атласная рубашка оверсайз'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_8}
                                 name={'Рубашка в полоску с блестящей нитью'}
-                                price={'2 299 руб.'}
+                                price={t('repos.price.2299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.shirt_w_9}
                                 name={'Трикотажная рубашка с разрывами'}
-                                price={'2 199 руб.'}
+                                price={t('repos.price.2199')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_10}
                                 name={
                                     'Рубашка оверсайз с анималистичным принтом'
                                 }
-                                price={'2 599 руб.'}
+                                price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_11}
                                 name={'Рубашка из сатина'}
-                                price={'2 599 руб.'}
+                                price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_w_12}
                                 name={'Рубашка с карманом'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                         </div>
                     </div>

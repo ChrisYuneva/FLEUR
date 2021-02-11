@@ -77,70 +77,70 @@ function ShowcaseHoodiesW() {
                             <Lot
                                 img={asset.hoodies_w_1}
                                 name={'Укороченное худи'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_2}
                                 name={
                                     'Толстовка оверсайз с застежкой на молнии'
                                 }
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_3}
                                 name={'Укороченное худи'}
-                                price={'1 799 руб.'}
+                                price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_4}
                                 name={'Худи в стиле преппи'}
-                                price={'1 799 руб.'}
+                                price={t('repos.price.1799')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_w_5}
                                 name={'Толстовка оверсайз с принтом'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_6}
                                 name={
                                     'Двусторонняя тостовка с принтом "МИККИ МАУС"'
                                 }
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_7}
                                 name={'Трикотажная толстовка с каплюшоном'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_8}
                                 name={'Укороченная толстовка с молнией'}
-                                price={'2 599 руб.'}
+                                price={t('repos.price.2599')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_w_9}
                                 name={'Толстовка с объёмными рукавами'}
-                                price={'1 799 руб.'}
+                                price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_10}
                                 name={'Укороченное трикотажное худи'}
-                                price={'2 599 руб.'}
+                                price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_11}
                                 name={'Жаккардовая толстовка в полоску'}
-                                price={'2 299 руб.'}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_w_12}
                                 name={'Толстовка с эффектом потертости'}
-                                price={'2 299 руб.'}
+                                price={t('repos.price.2299')}
                             ></Lot>
                         </div>
                     </div>

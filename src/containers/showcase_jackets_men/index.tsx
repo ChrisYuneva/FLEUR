@@ -59,79 +59,79 @@ function ShowcaseJacketsM() {
                                 name={
                                     'Хлопковая дублёнка из искуственного меха'
                                 }
-                                price={'7 299 руб.'}
+                                price={t('repos.price.7299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_2}
                                 name={
                                     'Хлопковая дублёнка из искуственного меха'
                                 }
-                                price={'7 299 руб.'}
+                                price={t('repos.price.7299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_3}
                                 name={
                                     'Хлопковая дублёнка из искуственного меха'
                                 }
-                                price={'7 299 руб.'}
+                                price={t('repos.price.7299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_4}
                                 name={
                                     'Джинсовая куртка с подкладкой из искуственной овчины'
                                 }
-                                price={'5 999 руб.'}
+                                price={t('repos.price.5999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jackets_m_5}
                                 name={'Дублёнка из искусственной замши'}
-                                price={'8 299 руб.'}
+                                price={t('repos.price.8299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_6}
                                 name={'Двусторонняя куртка'}
-                                price={'8 299 руб.'}
+                                price={t('repos.price.8299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_7}
                                 name={'Дублёнка из искусственной замши'}
-                                price={'8 299 руб.'}
+                                price={t('repos.price.8299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_8}
                                 name={'Двусторонняя куртка'}
-                                price={'8 299 руб.'}
+                                price={t('repos.price.8299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jackets_m_9}
                                 name={'Базовая джинсовая куртка'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_10}
                                 name={'Двусторонняя куртка'}
-                                price={'9 299 руб.'}
+                                price={t('repos.price.9299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_11}
                                 name={'Куртка из искусственной кожи'}
-                                price={'7 299 руб.'}
+                                price={t('repos.price.7299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_m_12}
                                 name={'Джинсовая куртка с принтом'}
-                                price={'5 999 руб.'}
+                                price={t('repos.price.5999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jackets_m_13}
                                 name={'Куртка из шерстяной ткани'}
-                                price={'8 299 руб.'}
+                                price={t('repos.price.8299')}
                             ></Lot>
                         </div>
                     </div>

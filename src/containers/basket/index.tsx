@@ -20,8 +20,8 @@ function Basket() {
                 {/*</Link>*/}
             </header>
             <div className={style.scan}>
-                <h2>Корзина</h2>
-                <span>Количество товаров: </span>
+                <h2>{t('repos.basket')}</h2>
+                <span>{t('repos.number_goods')}</span>
             </div>
             <div className={style.show}>
                 <div className={style.showrow}>
@@ -96,11 +96,11 @@ function Basket() {
             </div>
             <div className={style.score}>
                 <Link className={style.continue} to={URLs.showcase_dress.url}>
-                    Продолжить покупки
+                    {t('repos.continue')}
                 </Link>
-                <h2>Итого: 15151 руб.</h2>
+                <h2>{t('repos.total')} 15151 руб.</h2>
                 <Link className={style.continue} to={URLs.ordering.url}>
-                    Оформить заказ
+                    {t('repos.checkout')}
                 </Link>
             </div>
         </div>

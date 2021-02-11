@@ -57,66 +57,66 @@ function ShowcaseHoodiesM() {
                             <Lot
                                 img={asset.hoodies_m_1}
                                 name={'Толстовка с принтом'}
-                                price={'4 499 руб.'}
+                                price={t('repos.price.4499')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_2}
                                 name={'Флисовая толстовка с принтом "ЛАВА"'}
-                                price={'3 999 руб.'}
+                                price={t('repos.price.3999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_3}
                                 name={'Толстовка с принтом'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_4}
                                 name={'Худи с надписью'}
-                                price={'3 999 руб.'}
+                                price={t('repos.price.3999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_m_5}
                                 name={'Базовая толстовка с капюшоном'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_6}
                                 name={'Толстовка с принтом "МИККИ МАУС"'}
-                                price={'3 999 руб.'}
+                                price={t('repos.price.3999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_7}
                                 name={'Толстовкас с жаккардовой деталью'}
-                                price={'7 299 руб.'}
+                                price={t('repos.price.7299')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_8}
                                 name={'Толстовка с вышитой нашивкой'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_m_9}
                                 name={'Толстовка с контрастной нашивкой'}
-                                price={'5 999 руб.'}
+                                price={t('repos.price.5999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_10}
                                 name={'Базовая толстовка с капюшоном'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_11}
                                 name={'Толстовка с принтом "ГРАФФИТИ"'}
-                                price={'3 999 руб.'}
+                                price={t('repos.price.3999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_12}
                                 name={'Базовая толстовка с карманом'}
-                                price={'2 599 руб.'}
+                                price={t('repos.price.2599')}
                             ></Lot>
                         </div>
                     </div>

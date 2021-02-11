@@ -77,61 +77,61 @@ function ShowcaseJacketsW() {
                             <Lot
                                 img={asset.jackets_w_1}
                                 name={'Куртка с бахромой'}
-                                price={'4 499 руб.'}
+                                price={t('repos.price.4499')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_2}
                                 name={'Плотная рубашка из вельвета'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_3}
                                 name={'Куртка в стиле пэчворк'}
-                                price={'5 999 руб.'}
+                                price={t('repos.price.5999')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_4}
                                 name={'Куртка из искусственной кожи'}
-                                price={'4 499 руб.'}
+                                price={t('repos.price.4499')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jackets_w_5}
                                 name={'Складывающийся пуховик'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_6}
                                 name={'Куртка из искусственной овчины'}
-                                price={'5 999 руб.'}
+                                price={t('repos.price.5999')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_7}
                                 name={'Пуховик'}
-                                price={'4 499 руб.'}
+                                price={t('repos.price.4499')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_8}
                                 name={'Куртка-рубашка с поясом'}
-                                price={'4 499 руб.'}
+                                price={t('repos.price.4499')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jackets_w_9}
                                 name={'Куртка-рубашка с поясом'}
-                                price={'4 499 руб.'}
+                                price={t('repos.price.4499')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_10}
                                 name={'Легкая стеганая куртка'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jackets_w_11}
                                 name={'Пуховик с термонаполнителем'}
-                                price={'7 299 руб.'}
+                                price={t('repos.price.7299')}
                             ></Lot>
                         </div>
                     </div>

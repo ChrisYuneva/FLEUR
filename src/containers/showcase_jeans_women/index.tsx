@@ -77,72 +77,72 @@ function ShowcaseJeansW() {
                             <Lot
                                 img={asset.jeans_w_1}
                                 name={'Джинсы с широкими разрезами'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_2}
                                 name={'Джинсы скинни'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_3}
                                 name={'Джинсы с широкими разрезами'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_4}
                                 name={
                                     'Джинсы прямого кроя с высокой посадкой и разрезами'
                                 }
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jeans_w_5}
                                 name={'Укороченные джинсы'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_6}
                                 name={
                                     'Прямые джинсы полной длины с высокой посадкой'
                                 }
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_7}
                                 name={
                                     'Укороченные джинсы с высокой посадкой и широкими штанинами'
                                 }
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_8}
                                 name={'Расклешенные джинсы'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jeans_w_9}
                                 name={'Джинсы MOM FIT'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_10}
                                 name={'Классические джинсы'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_11}
                                 name={'Джинсы с несколькими пуговицами'}
-                                price={'3 299 руб.'}
+                                price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_w_12}
                                 name={'Джинсы с высокой посадкой'}
-                                price={'2 999 руб.'}
+                                price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                     </div>

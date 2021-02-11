@@ -76,86 +76,84 @@ function ShowcaseAccessories() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.accessories_1}
-                                name={'Базовый шарф'}
-                                price={'2 299 руб.'}
+                                name={t('repos.basic_scarf')}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_2}
-                                name={'Шляпа из фетра'}
-                                price={'2 999 руб.'}
+                                name={t('repos.felt_hat')}
+                                price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_3}
-                                name={'Шарф в клетку'}
-                                price={'2 299 руб.'}
+                                name={t('repos.check_scarf')}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_4}
-                                name={'Ожерелье из крупных звеньев'}
-                                price={'1 199 руб.'}
+                                name={t('repos.large_link_necklace')}
+                                price={t('repos.price.1199')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.accessories_5}
-                                name={'Ремень из металлических звеньев'}
-                                price={'2 299 руб.'}
+                                name={t('repos.metal_link_belt')}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_6}
-                                name={'Трикотажная шапка-бини'}
-                                price={'1 499 руб.'}
+                                name={t('repos.knitted_beanie')}
+                                price={t('repos.price.1499')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_7}
-                                name={
-                                    'Платок из мягкой ткани с геометрическим узором'
-                                }
-                                price={'2 299 руб.'}
+                                name={t('repos.geometric_soft_fabric_scarf')}
+                                price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_8}
-                                name={'Ожерелье из крупных звеньев'}
-                                price={'1 499 руб.'}
+                                name={t('repos.large_link_necklace')}
+                                price={t('repos.price.1499')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.accessories_9}
-                                name={'Берет из шерсти'}
-                                price={'1 799 руб.'}
+                                name={t('repos.beret_made_of_wool')}
+                                price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_10}
-                                name={'Панама из искусственной овчины'}
-                                price={'1 799 руб.'}
+                                name={t('repos.faux_sheepskin_panama')}
+                                price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_11}
-                                name={'Шапка в рубчик'}
-                                price={'1 499 руб.'}
+                                name={t('repos.ribbed_hat')}
+                                price={t('repos.price.1499')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_12}
-                                name={'Жесткое ожерелье с натуральным жемчугом'}
-                                price={'1 799 руб.'}
+                                name={t('repos.rigid_necklace_natural_pearls')}
+                                price={t('repos.price.1799')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.accessories_13}
-                                name={'Ободок с узлои'}
-                                price={'899 руб.'}
+                                name={t('repos.bezel_with_knot')}
+                                price={t('repos.price.899')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_14}
-                                name={'Трикотажный тюрбан'}
-                                price={'1 199 руб.'}
+                                name={t('repos.knitted_turban')}
+                                price={t('repos.price.1199')}
                             ></Lot>
                             <Lot
                                 img={asset.accessories_15}
-                                name={'Кожаное ожерелье с натуральным жемчугом'}
-                                price={'1 499 руб.'}
+                                name={t('repos.leather_necklace_natural_pearls')}
+                                price={t('repos.price.1499')}
                             ></Lot>
                         </div>
                     </div>
