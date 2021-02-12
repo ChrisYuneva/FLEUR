@@ -47,7 +47,7 @@
     grid-template-columns: 50% 50%;
     height: 300px;
     width: 900px;
-    background-color: #f5d4ae;
+    background-color: var(--order_form);
 }
 
 .form h1 {
@@ -72,7 +72,7 @@
 }
 .input {
 
-    padding-top: var(--offset-sm);
+    padding-top: var(--offset-bmd);
 
     label{
         margin-left: var(--offset-sm);

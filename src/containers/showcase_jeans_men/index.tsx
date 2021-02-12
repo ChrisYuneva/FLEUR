@@ -5,11 +5,15 @@ import style from './style.css';
 import { URLs } from '../../__data__/urls';
 import asset from '../../asset';
 import { useTranslation } from 'react-i18next';
+import MetaTags from 'react-meta-tags';
 
 function ShowcaseJeansM() {
     const { t, i18n } = useTranslation();
     return (
         <div className={style.wrapper}>
+            <MetaTags>
+                <title>{t('repos.jeans_m')}</title>
+            </MetaTags>
             <nav className={style.nav}>
                 <Link className={style.name} to={URLs.home.url}>
                     {t('repos.name')}

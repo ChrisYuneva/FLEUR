@@ -1,21 +1,19 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-
 import { Lot } from '../../components';
-
 import style from './style.css';
-
 import { URLs } from '../../__data__/urls';
-
 import asset from '../../asset';
-
 import { useTranslation } from 'react-i18next';
+import MetaTags from 'react-meta-tags';
 
 function ShowcaseTshirtsW() {
     const { t, i18n } = useTranslation();
     return (
         <div className={style.wrapper}>
+            <MetaTags>
+                <title>{t('repos.t-shirts_w')}</title>
+            </MetaTags>
             <nav className={style.nav}>
                 <Link className={style.name} to={URLs.home.url}>
                     {t('repos.name')}
