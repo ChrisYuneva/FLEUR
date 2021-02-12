@@ -50,73 +50,75 @@ function ShowcaseJeansM() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jeans_m_1}
-                                name={'Укороченные джинсы "Чинос"'}
+                                name={t('repos.cropped_chinos')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_2}
-                                name={'Базовые джинсы скинни'}
+                                name={t('repos.basic_skinny_jeans')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_3}
-                                name={'Базовые джинсы'}
+                                name={t('repos.basic_jeans')}
                                 price={t('repos.price.1499')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_4}
-                                name={'Базовые джинсы скинни'}
+                                name={t('repos.basic_skinny_jeans')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jeans_m_5}
-                                name={'Джинсы свободного кроя'}
+                                name={t('repos.relaxed_fit_jeans')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_6}
-                                name={'Черные базовые джинсы'}
+                                name={t('repos.basic_black_jeans')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_7}
-                                name={'Базовые джинсы'}
+                                name={t('repos.basic_jeans')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_8}
-                                name={'Джинсы облегающего кроя в стиле 90-х'}
+                                name={t('repos.90s_slim_fit_jeans')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jeans_m_9}
-                                name={'Базовые джинсы скинни'}
+                                name={t('repos.basic_skinny_jeans')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_10}
-                                name={'Джинсы свободного кроя'}
+                                name={t('repos.relaxed_fit_jeans')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_11}
-                                name={'Базовые зауженные джинсы'}
+                                name={t('repos.basic_skinny_jeans')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.jeans_m_12}
-                                name={'Базовые джинсы с эффектом брызг краски'}
+                                name={t(
+                                    'repos.basic_jeans_with_paint_splash_effect'
+                                )}
                                 price={t('repos.price.4499')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.jeans_m_13}
-                                name={'Зауженные джинсы с разрывами'}
+                                name={t('repos.ripped_skinny_jeans')}
                                 price={t('repos.price.4499')}
                             ></Lot>
                         </div>

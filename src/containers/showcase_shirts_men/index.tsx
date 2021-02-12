@@ -56,74 +56,74 @@ function ShowcaseShirtsM() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.shirt_m_1}
-                                name={'Джинсовая рубашка с декоративными швами'}
+                                name={t(
+                                    'repos.denim_shirt_with_decorative_seams'
+                                )}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_2}
-                                name={'Джинсовая рубашка с декоративными швами'}
+                                name={t(
+                                    'repos.denim_shirt_with_decorative_seams'
+                                )}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_3}
-                                name={
-                                    'Рубашка из ткани с рельефным узором в полоску'
-                                }
+                                name={t('repos.striped_embossed_fabric_shirt')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_4}
-                                name={
-                                    'Рубашка из ткани с рельефным узором в полоску'
-                                }
+                                name={t('repos.striped_embossed_fabric_shirt')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.shirt_m_5}
-                                name={'Рубашка в клетку из жатой ткани'}
+                                name={t('repos.crinkled_check_shirt')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_6}
-                                name={'Базовая джинсовая рубашка'}
+                                name={t('repos.basic_denim_shirt')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_7}
-                                name={'Базовая джинсовая рубашка'}
+                                name={t('repos.basic_denim_shirt')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_8}
-                                name={
-                                    'Рубашка из немнущейся ткани с рельефным узором'
-                                }
+                                name={t(
+                                    'repos.textured_crease_resistant_shirt'
+                                )}
                                 price={t('repos.price.2299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.shirt_m_9}
-                                name={'Рубашка с принтом "Здания"'}
+                                name={t('repos.buildings_print_shirt')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_10}
-                                name={
-                                    'Рубашка свободного кроя из хлопка и льна'
-                                }
+                                name={t(
+                                    'repos.relaxed_fit_shirt_in_cotton_linen'
+                                )}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_11}
-                                name={'Базовая рубашка плотно облегающего кроя'}
+                                name={t('repos.basic_slim_fit_shirt')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.shirt_m_12}
-                                name={'Эластичная рубашка'}
+                                name={t('repos.elastic_shirt')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                         </div>

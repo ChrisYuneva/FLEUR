@@ -56,66 +56,74 @@ function ShowcaseHoodiesM() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_m_1}
-                                name={'Толстовка с принтом'}
+                                name={t('repos.hoodies_with_print')}
                                 price={t('repos.price.4499')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_2}
-                                name={'Флисовая толстовка с принтом "ЛАВА"'}
+                                name={t(
+                                    'repos.fleece_sweatshirt_with_lava_print'
+                                )}
                                 price={t('repos.price.3999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_3}
-                                name={'Толстовка с принтом'}
+                                name={t('repos.hoodies_with_print')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_4}
-                                name={'Худи с надписью'}
+                                name={t('repos.hoodie_with_slogan')}
                                 price={t('repos.price.3999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_m_5}
-                                name={'Базовая толстовка с капюшоном'}
+                                name={t('repos.basic_hoodie')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_6}
-                                name={'Толстовка с принтом "МИККИ МАУС"'}
+                                name={t('repos.sweatshirt_mickey_print')}
                                 price={t('repos.price.3999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_7}
-                                name={'Толстовкас с жаккардовой деталью'}
+                                name={t(
+                                    'repos.sweatshirt_with_jacquard_detail'
+                                )}
                                 price={t('repos.price.7299')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_8}
-                                name={'Толстовка с вышитой нашивкой'}
+                                name={t(
+                                    'repos.sweatshirt_with_embroidered_patch'
+                                )}
                                 price={t('repos.price.3299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.hoodies_m_9}
-                                name={'Толстовка с контрастной нашивкой'}
+                                name={t(
+                                    'repos.sweatshirt_with_contrasting_patch'
+                                )}
                                 price={t('repos.price.5999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_10}
-                                name={'Базовая толстовка с капюшоном'}
+                                name={t('repos.basic_hoodie')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_11}
-                                name={'Толстовка с принтом "ГРАФФИТИ"'}
+                                name={t('repos.sweatshirt_with_graffiti_print')}
                                 price={t('repos.price.3999')}
                             ></Lot>
                             <Lot
                                 img={asset.hoodies_m_12}
-                                name={'Базовая толстовка с карманом'}
+                                name={t('repos.basic_sweatshirt_with pocket')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                         </div>

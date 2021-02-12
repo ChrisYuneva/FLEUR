@@ -76,66 +76,66 @@ function ShowcaseDress() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.dress1}
-                                name={'Платье с разрезом'}
+                                name={t('repos.slit_dress')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.dress2}
-                                name={'Комбинированное платье'}
+                                name={t('repos.combination_dress')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.dress3}
-                                name={'Платье мини с блёстками'}
+                                name={t('repos.mini_dress_with_sequins')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.dress4}
-                                name={'Длинное трикотажное платье'}
+                                name={t('repos.long_knitted_dress')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.dress5}
-                                name={'Сатиновое платье'}
+                                name={t('repos.satin_dress')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.dress6}
-                                name={'Комбинированное платье'}
+                                name={t('repos.combination_dress')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.dress7}
-                                name={'Трикотажное платье'}
+                                name={t('repos.knitted_dress')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.dress8}
-                                name={'Платье с принтом'}
+                                name={t('repos.printed_dress')}
                                 price={t('repos.price.4299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.dress9}
-                                name={'Платье с деталями'}
+                                name={t('repos.dress_with_details')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.dress10}
-                                name={'Мини-платье из бархата'}
+                                name={t('repos.velvet_mini_dress')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.dress11}
-                                name={'Короткое платье'}
+                                name={t('repos.short_dress')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.dress12}
-                                name={'Платье с пайетками'}
+                                name={t('repos.sequin_dress')}
                                 price={t('repos.price.6999')}
                             ></Lot>
                         </div>

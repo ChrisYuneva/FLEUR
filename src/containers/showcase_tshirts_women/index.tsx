@@ -76,73 +76,73 @@ function ShowcaseTshirtsW() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_w_1}
-                                name={'Топ с подплечниками'}
+                                name={t('repos.top_with_shoulder_pads')}
                                 price={t('repos.price.1199')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_2}
-                                name={'Укороченная футболка'}
+                                name={t('repos.cropped_t-shirt')}
                                 price={t('repos.price.1599')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_3}
-                                name={'Футболка со сборками'}
+                                name={t('repos.gathered_t-shirt')}
                                 price={t('repos.price.999')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_4}
-                                name={'Футболка с принтом'}
+                                name={t('repos.t-shirt_with_print')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_w_5}
-                                name={'Укороченная футболка с принтом'}
+                                name={t('repos.cropped_t-shirt_with_print')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_6}
-                                name={'Футболка ART & DECO POTTERY'}
+                                name={t('repos.t-shirt_art_deco')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_7}
-                                name={'Боди в рубчик'}
+                                name={t('repos.ribbed_bodysuit')}
                                 price={t('repos.price.1499')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_8}
-                                name={'Жаккардовый топ'}
+                                name={t('repos.jacquard_top')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_w_9}
-                                name={'Топ в рубчик со сборкой'}
+                                name={t('repos.ribbed_top_with_gather')}
                                 price={t('repos.price.899')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_10}
-                                name={'Боди с пуговицами'}
+                                name={t('repos.bodysuit_with_buttons')}
                                 price={t('repos.price.1199')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_11}
-                                name={'Базовая футболка из хлопка'}
+                                name={t('repos.basic_cotton_t-shirt')}
                                 price={t('repos.price.599')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_w_12}
-                                name={"Футболка с принтом 'YALE'"}
+                                name={t('repos.t-shirt_with_yale_print')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_w_13}
-                                name={'Укороченная футболка'}
+                                name={t('repos.cropped_t-shirt')}
                                 price={t('repos.price.1199')}
                             ></Lot>
                         </div>

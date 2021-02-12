@@ -76,66 +76,68 @@ function ShowcaseSkirts() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.skirts_1}
-                                name={'Мини-юбка с контрастными швами'}
+                                name={t(
+                                    'repos.miniskirt_with_contrasting_seams'
+                                )}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_2}
-                                name={'Структурная юбка мини'}
+                                name={t('repos.structured_mini_skirt')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_3}
-                                name={'Структурная юбка мини'}
+                                name={t('repos.structured_mini_skirt')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_4}
-                                name={'Мини-юбка в клетку'}
+                                name={t('repos.check_mini_skirt')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.skirts_5}
-                                name={'Юбка с разрезои'}
+                                name={t('repos.skirt_with_slit')}
                                 price={t('repos.price.1999')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_6}
-                                name={'Юбка-шорты с принтом'}
+                                name={t('repos.printed_skirt')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_7}
-                                name={'Мини-юбка из искусственной кожи'}
+                                name={t('repos.faux_leather_mini_skirt')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_8}
-                                name={'Юбка-шорты из рельефной ткани'}
+                                name={t('repos.embossed_skirt_shorts')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.skirts_9}
-                                name={'Юбка в клетку'}
+                                name={t('repos.plaid_skirt')}
                                 price={t('repos.price.2599')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_10}
-                                name={'Мини-юбка в клетку'}
+                                name={t('repos.check_mini_skirt')}
                                 price={t('repos.price.3299')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_11}
-                                name={'Юбка в складку из искусственной кожи'}
+                                name={t('repos.faux_leather_pleated_skirt')}
                                 price={t('repos.price.2999')}
                             ></Lot>
                             <Lot
                                 img={asset.skirts_12}
-                                name={'Короткая юбка с отделкой под кожу'}
+                                name={t('repos.short_skirt_with_leather_trim')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                         </div>

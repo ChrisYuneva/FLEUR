@@ -152,7 +152,9 @@ function ShowcaseAccessories() {
                             ></Lot>
                             <Lot
                                 img={asset.accessories_15}
-                                name={t('repos.leather_necklace_natural_pearls')}
+                                name={t(
+                                    'repos.leather_necklace_natural_pearls'
+                                )}
                                 price={t('repos.price.1499')}
                             ></Lot>
                         </div>

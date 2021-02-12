@@ -56,60 +56,56 @@ function ShowcaseTshirtsM() {
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_m_1}
-                                name={'Футболка с контрастным принтом'}
+                                name={t('repos.t-shirt_with_contrast_print')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_2}
-                                name={'Футболка из рельевной ткани в полоску'}
+                                name={t('repos.embossed_striped_t-shirt')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_3}
-                                name={'Базовая футболка облегающего кроя'}
+                                name={t('repos.basic_slim_fit_t-shirt')}
                                 price={t('repos.price.1199')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_4}
-                                name={'Футболка с надписью'}
+                                name={t('repos.t-shirt_with_slogan')}
                                 price={t('repos.price.1999')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_m_5}
-                                name={
-                                    'Футболка из ткани с эффектом потертости и карманом'
-                                }
+                                name={t('repos.faded_t-shirt_with_pocket')}
                                 price={t('repos.price.1499')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_6}
-                                name={'Футболка с принтом'}
+                                name={t('repos.t-shirt_with_print')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_7}
-                                name={'Поло из ткани с эффектным узором'}
+                                name={t('repos.polo_shirt_striking_fabric')}
                                 price={t('repos.price.1799')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_8}
-                                name={'Футболка с принтом "МИККИ МАУС"'}
+                                name={t('repos.t-shirt_with_mickey_print')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                         </div>
                         <div className={style.showrow}>
                             <Lot
                                 img={asset.tshirt_m_9}
-                                name={
-                                    'Футболка из ткани с эффектом потертости и карманом'
-                                }
+                                name={t('repos.faded_t-shirt_with_pocket')}
                                 price={t('repos.price.1499')}
                             ></Lot>
                             <Lot
                                 img={asset.tshirt_m_10}
-                                name={'Футболка с принтом'}
+                                name={t('repos.t-shirt_with_print')}
                                 price={t('repos.price.2299')}
                             ></Lot>
                         </div>
