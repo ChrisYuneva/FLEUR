@@ -10,8 +10,8 @@ export type GoodsState = {
 const initialState: GoodsState = {
     goodsItems: [],
     loading: false,
-    gender: 'FEMALE',
-    type: 'dress',
+    gender: null,
+    type: null,
 };
 
 const handleSubmit = (state, action) => ({ ...state, loading: true });

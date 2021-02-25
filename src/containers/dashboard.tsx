@@ -7,14 +7,14 @@ import Home from './home';
 import Basket from './basket';
 import HomeMans from './home_man';
 import Order from './ordering';
-import ShowcaseMen from '../components/showcase_m/showcase_m';
-import ShowcaseWoman from '../components/showcase_m/showcase_m';
+import ShowcaseMen from '../components/showcase_m';
+import ShowcaseWoman from '../components/showcase_w';
 
 const Dashboard = () => (
     <Switch>
-        {/*<Route exact path="/">*/}
-        {/*    <Redirect to={URLs.home.url} />*/}
-        {/*</Route>*/}
+        <Route exact path="/">
+            <Redirect to={URLs.home.url} />
+        </Route>
 
         <Route exact path={URLs.home.url}>
             <Home />

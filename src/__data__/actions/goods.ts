@@ -25,7 +25,7 @@ export const getProducts = (gender, type) => async (dispatch) => {
         const response = await axios.get(`${baseApiUrl}/getProducts`, {
             params,
         });
-        dispatch(successActionCreator(types.GOODS.SUCCESS, response.data.data));
+        dispatch(successActionCreator(types.GOODS.SUCCESS, response.data));
     } catch (error) {
         dispatch(errorActionCreator('Неизвестная ошибка'));
     }
