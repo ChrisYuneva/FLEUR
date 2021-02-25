@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import style from './style.css';
 import { URLs } from '../../__data__/urls';
-import asset from '../../asset';
-import { Lot } from '../../components';
+import { BasketLot } from '../../components';
 import { useTranslation } from 'react-i18next';
 import MetaTags from 'react-meta-tags';
+import { getBasket } from '../../__data__/actions/basket';
+import { getImgByName } from '../../utils';
+import { connect } from 'react-redux';
 
-function Basket() {
+type MapStateToProps = {
+    loading: boolean;
+    basket: any;
+};
+type MapDispatchToProps = {
+    getBasket(): () => void;
+};
+type GoodsProps = MapDispatchToProps & MapStateToProps;
+
+function Basket({
+    loading,
+    basket,
+    getBasket,
+}: React.PropsWithChildren<GoodsProps>) {
+    useEffect(() => {
+        getBasket();
+    }, []);
+
     const { t, i18n } = useTranslation();
+
+    if (loading) {
+        return <p>Пожалуйста, подождите. Идёт загрузка</p>;
+    }
+
     return (
         <div className={style.wrapper}>
             <MetaTags>
@@ -18,91 +42,26 @@ function Basket() {
                 <Link className={style.name} to={URLs.home.url}>
                     {t('repos.name')}
                 </Link>
-                {/*<Link className={style.ref} to={URLs.basket.url}>*/}
-                {/*    <img src={asset.icon} className={style.box} />*/}
-                {/*    <span className={style.text}>Корзина (0)</span>*/}
-                {/*</Link>*/}
             </header>
             <div className={style.scan}>
                 <h2>{t('repos.basket')}</h2>
-                <span>{t('repos.number_goods')}</span>
             </div>
             <div className={style.show}>
                 <div className={style.showrow}>
-                    <Lot
-                        img={asset.dress3}
-                        name={'Платье мини с блёстками'}
-                        price={'3 299 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                    <Lot
-                        img={asset.jackets_m_11}
-                        name={'Куртка из искусственной кожи'}
-                        price={'7 299 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                    <Lot
-                        img={asset.tshirt_w_4}
-                        name={'Футболка с принтом'}
-                        price={'1 799 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                    <Lot
-                        img={asset.shirt_m_11}
-                        name={'Базовая рубашка плотно облегающего кроя'}
-                        price={'3 299 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                </div>
-                <div className={style.showrow}>
-                    <Lot
-                        img={asset.tshirt_w_3}
-                        name={'Футболка со сборками'}
-                        price={'999 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                    <Lot
-                        img={asset.tshirt_w_1}
-                        name={'Топ с подплечниками'}
-                        price={'1 199 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                    <Lot
-                        img={asset.shirt_m_9}
-                        name={'Рубашка с принтом "Здания"'}
-                        price={'3 299 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                    <Lot
-                        img={asset.dress11}
-                        name={'Короткое платье'}
-                        price={'2 999 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
-                </div>
-                <div className={style.showrow}>
-                    <Lot
-                        img={asset.dress12}
-                        name={'Платье с пайетками'}
-                        price={'6 999 руб.'}
-                    >
-                        <button className={style.del}>Удалить</button>
-                    </Lot>
+                    {basket.map((lot, index) => (
+                        <BasketLot
+                            key={index}
+                            img={getImgByName(lot.img)}
+                            name={t(lot.name)}
+                            price={t(lot.price)}
+                        ></BasketLot>
+                    ))}
                 </div>
             </div>
             <div className={style.score}>
                 <Link className={style.continue} to={URLs.showcase_dress.url}>
                     {t('repos.continue')}
                 </Link>
-                <h2>{t('repos.total')} 15151 руб.</h2>
                 <Link className={style.continue} to={URLs.ordering.url}>
                     {t('repos.checkout')}
                 </Link>
@@ -111,4 +70,13 @@ function Basket() {
     );
 }
 
-export default Basket;
+const mapStateToProps = (state): any => ({
+    basket: state.basket.basket,
+    loading: state.basket.loading,
+});
+
+const mapDispatchToProps = (dispatch): MapDispatchToProps => ({
+    getBasket: () => dispatch(getBasket()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Basket);

@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование Тестируем рендер Input 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Input
+    nextStep={null}
+  >
+    <div
+      className="wrapper"
+    >
+      <header
+        className="header"
+      >
+        <Link
+          className="name"
+          to="/home"
+        >
+          <a
+            className="name"
+            href="/home"
+          >
+            FLEUR
+          </a>
+        </Link>
+      </header>
+      <ReactFinalForm
+        onSubmit={[Function]}
+        render={[Function]}
+      >
+        <div
+          className="order"
+        >
+          <h1>
+            Оформление заказа
+          </h1>
+          <div
+            className="form"
+          >
+            <div
+              className="input"
+            >
+              <label>
+                Введите имя
+              </label>
+              <ForwardRef(Field)
+                component="input"
+                name="firstName"
+                type="text"
+              >
+                <input
+                  name="firstName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </ForwardRef(Field)>
+            </div>
+            <div
+              className="input"
+            >
+              <label>
+                Введите фамилию
+              </label>
+              <ForwardRef(Field)
+                component="input"
+                name="lastName"
+                type="text"
+              >
+                <input
+                  name="lastName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </ForwardRef(Field)>
+            </div>
+            <div
+              className="input"
+            >
+              <label>
+                Введите адрес
+              </label>
+              <ForwardRef(Field)
+                component="input"
+                name="adress"
+                type="text"
+              >
+                <input
+                  name="adress"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </ForwardRef(Field)>
+            </div>
+            <div
+              className="input"
+            >
+              <label>
+                Введите почтовый индекс
+              </label>
+              <ForwardRef(Field)
+                component="input"
+                name="index"
+                type="text"
+              >
+                <input
+                  name="index"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  type="text"
+                  value=""
+                />
+              </ForwardRef(Field)>
+            </div>
+            <div />
+            <button
+              className="arrange"
+              onClick={null}
+            >
+              Оформить
+            </button>
+          </div>
+        </div>
+      </ReactFinalForm>
+    </div>
+  </Input>
+</Provider>
+`;
+
+exports[`Тестирование Тестируем рендер Luck 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Luck>
+    <div
+      className="orderS"
+    >
+      <h1
+        className="luck"
+      >
+        Ваш заказ оформлен!
+      </h1>
+      <Link
+        className="continue"
+        to="/showcase_dress"
+      >
+        <a
+          className="continue"
+          href="/showcase_dress"
+        >
+          Продолжить покупки
+        </a>
+      </Link>
+    </div>
+  </Luck>
+</Provider>
+`;
+
+exports[`Тестирование Тестируем рендер Order 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Order>
+    <div>
+      <Input
+        nextStep={[Function]}
+      >
+        <div
+          className="wrapper"
+        >
+          <header
+            className="header"
+          >
+            <Link
+              className="name"
+              to="/home"
+            >
+              <a
+                className="name"
+                href="/home"
+              >
+                FLEUR
+              </a>
+            </Link>
+          </header>
+          <ReactFinalForm
+            onSubmit={[Function]}
+            render={[Function]}
+          >
+            <div
+              className="order"
+            >
+              <h1>
+                Оформление заказа
+              </h1>
+              <div
+                className="form"
+              >
+                <div
+                  className="input"
+                >
+                  <label>
+                    Введите имя
+                  </label>
+                  <ForwardRef(Field)
+                    component="input"
+                    name="firstName"
+                    type="text"
+                  >
+                    <input
+                      name="firstName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </ForwardRef(Field)>
+                </div>
+                <div
+                  className="input"
+                >
+                  <label>
+                    Введите фамилию
+                  </label>
+                  <ForwardRef(Field)
+                    component="input"
+                    name="lastName"
+                    type="text"
+                  >
+                    <input
+                      name="lastName"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </ForwardRef(Field)>
+                </div>
+                <div
+                  className="input"
+                >
+                  <label>
+                    Введите адрес
+                  </label>
+                  <ForwardRef(Field)
+                    component="input"
+                    name="adress"
+                    type="text"
+                  >
+                    <input
+                      name="adress"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </ForwardRef(Field)>
+                </div>
+                <div
+                  className="input"
+                >
+                  <label>
+                    Введите почтовый индекс
+                  </label>
+                  <ForwardRef(Field)
+                    component="input"
+                    name="index"
+                    type="text"
+                  >
+                    <input
+                      name="index"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </ForwardRef(Field)>
+                </div>
+                <div />
+                <button
+                  className="arrange"
+                  onClick={[Function]}
+                >
+                  Оформить
+                </button>
+              </div>
+            </div>
+          </ReactFinalForm>
+        </div>
+      </Input>
+    </div>
+  </Order>
+</Provider>
+`;

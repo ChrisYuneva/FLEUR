@@ -1,0 +1,19 @@
+import React from 'react';
+import { mount } from 'enzyme';
+import { Provider } from 'react-redux';
+import Home from '../home/index';
+import { describe, it, expect } from '@jest/globals';
+import { store } from '../../__data__/store';
+
+describe('Тестирование', () => {
+    it('Тестируем рендер Home', () => {
+        expect.assertions(1);
+        const component = mount(
+            <Provider store={store}>
+                <Home />
+            </Provider>
+        );
+
+        expect(component).toMatchSnapshot();
+    });
+});

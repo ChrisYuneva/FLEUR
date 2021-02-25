@@ -9,15 +9,12 @@
     max-height: 100vh;
     height: 100vh;
     flex-direction: column;
-    background: #deb585;
-    //justify-content: center;
-    //align-items: center;
+    background: var(--main);
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    //position: absolute;
     height: 100px;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +56,6 @@
 .wrapper2{
     display: flex;
     flex-direction: column;
-    //max-height: calc(100vh - 100px);
     height: 100%;
     width: 100vw;
     border-color: #5285ec;

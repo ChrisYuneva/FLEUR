@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование Тестируем рендер Home 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Home>
+    <div
+      className="wrapper"
+    >
+      <MetaTags />
+      <header
+        className="header"
+      >
+        <Link
+          className="name"
+          to="/home"
+        >
+          <a
+            className="name"
+            href="/home"
+          >
+            FLEUR
+          </a>
+        </Link>
+      </header>
+      <div
+        className="arrow_div"
+      >
+        <Link
+          className="arrow_d"
+          to="/home_man"
+        >
+          <a
+            className="arrow_d"
+            href="/home_man"
+          >
+            <img
+              className="arrow"
+              src="FILE_MOCK"
+            />
+            <span
+              className="arrow_man"
+            >
+              Мужчины
+            </span>
+          </a>
+        </Link>
+      </div>
+      <Link
+        className="home"
+        to="/showcase_dress"
+      >
+        <a
+          className="home"
+          href="/showcase_dress"
+        >
+          <div
+            className="rectangle"
+          >
+            <span>
+              Перейти к покупкам
+            </span>
+          </div>
+        </a>
+      </Link>
+    </div>
+  </Home>
+</Provider>
+`;

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://allfont.ru/allfont.css?fonts=cinzel');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import '../../__data__/style/sizes.css';
+@import '../../__data__/style/colors.css';
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -23,71 +23,23 @@
     justify-content: space-between;
     align-items: center;
 
-    .search {
-        align-items: center;
-        margin: 16px auto;
-        width: 300px;
-        height: 30px;
-        justify-content: center;
-        display: flex;
-    }
-
-    .search .line {
-        border: none;
-        outline: none !important;
-        border-bottom: 1px solid white;
-        background: transparent;
-        width: 300px;
-        height: 30px;
-        font-size: 20px;
-        color: white;
-    }
-
-    ::placeholder {
-        font-size: 20px;
-        color: white;
-    }
-
     .name {
         font-family: 'Montserrat', sans-serif;
         display: flex;
         font-size: 48px;
         align-items: center;
         text-decoration: none;
-        color: white;
+        color: var(--white);
         font-style: normal;
         font-weight: lighter;
         padding-left: 36px;
-    }
-
-    .ref {
-        display: flex;
-        height: 30px;
-    //width: 138px;
-        color: white;
-        align-items: center;
-        text-decoration: none;
-    //padding: 0;
-    }
-
-    .box {
-        height: 30px;
-        width: 30px;
-    }
-
-    .text {
-        padding-left: 8px;
-        font-size: 16px;
-        font-family: Roboto;
     }
 }
 
 .arrow_div {
     display: flex;
     flex-direction: row;
-//width: 100vw;
     height: 45%;
-//height: 35px;
     align-items: flex-end;
 
     .arrow_d {
@@ -95,10 +47,8 @@
         flex-direction: row;
         height: 35px;
         width: 150px;
-        color: white;
-        font-family: Roboto;
+        color: var(--white);
         right: 0;
-        /*top: 50%;*/
         margin: 0;
         padding: 0;
         align-items: center;
@@ -107,7 +57,6 @@
     }
 }
 .home {
-//width: 100vw;
     height: 55%;
     align-items: center;
     justify-content: center;
@@ -121,37 +70,14 @@
         width: 220px;
         height: 50px;
         background: transparent;
-        border: 2px solid white;
-        color: white;
-        font-family: Roboto;
+        border: 2px solid var(--white);
+        color: var(--white);
         text-decoration: none;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-
 }
-
-.back {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position:fixed;
-    overflow:hidden;
-}
-
-.box {
-    position: relative;
-    height: 30px;
-    width: 30px;
-}
-
-.text {
-    font-size: 16px;
-    font-family: Roboto;
-}
-
 
 .arrow {
     width: 55px;

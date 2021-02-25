@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тестирование Тестируем рендер Basket 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Basket)>
+    <Basket
+      basket={Array []}
+      getBasket={[Function]}
+      loading={true}
+    >
+      <p>
+        Пожалуйста, подождите. Идёт загрузка
+      </p>
+    </Basket>
+  </Connect(Basket)>
+</Provider>
+`;

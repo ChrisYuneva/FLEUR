@@ -1,0 +1,38 @@
+@import '../../__data__/style/sizes.css';
+@import '../../__data__/style/colors.css';
+
+.showlittle {
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--offset-bmd);
+
+    .image {
+        width: 250px;
+        height: 350px;
+        max-width: 250px;
+        max-height: 350px;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        padding-bottom: 8px;
+
+        & > img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    }
+}
+
+.showrow {
+    display: grid;
+    grid-row-gap: 64px;
+    grid-template-columns: 22% 22% 22% 22%;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--offset-bmd);
+}
+

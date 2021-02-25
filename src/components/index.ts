@@ -1,5 +1,6 @@
-import LabeledInput from './labeled-input';
-import Button from './button';
 import Lot from './lot';
+import BasketLot from './basket_lot';
+import ShowcaseWoman from './showcase_w';
+import ShowcaseMan from './showcase_m';
 
-export { LabeledInput, Button, Lot };
+export { Lot, BasketLot, ShowcaseWoman, ShowcaseMan };

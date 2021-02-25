@@ -26,9 +26,9 @@ function HomeMans() {
                 </Link>
             </div>
 
-            <Link className={style.home} to={URLs.showcase_jackets_men.url}>
+            <Link className={style.home} to={URLs.showcase_men.url}>
                 <div className={style.rectangle}>
-                    <span className={style.home_s}>{t('repos.turn')}</span>
+                    <span>{t('repos.turn')}</span>
                 </div>
             </Link>
         </div>
