@@ -58,15 +58,13 @@ function Showcases({
             // caption={i18next.t('repos.caption.t-shirts_m')}
         >
             <MetaTags>
-                <title>{t('repos.t-shirts_m')}</title>
+                <title>{t('repos.name')}</title>
             </MetaTags>
 
             {goodsItems.map((lot, index) => (
                 <Lot
                     click={() => addProducts(lot)}
                     key={index}
-                    title={t(lot.title)}
-                    caption={t(lot.caption)}
                     img={getImgByName(lot.img)}
                     name={t(lot.name)}
                     price={t(lot.price)}

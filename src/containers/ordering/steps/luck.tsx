@@ -9,7 +9,7 @@ function Luck() {
     return (
         <div className={style.orderS}>
             <h1 className={style.luck}>Ваш заказ оформлен!</h1>
-            <Link className={style.continue} to={URLs.showcase_women.url}>
+            <Link className={style.continue} to={URLs.home.url}>
                 {t('repos.continue')}
             </Link>
         </div>

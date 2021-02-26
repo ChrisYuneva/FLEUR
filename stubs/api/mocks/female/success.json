@@ -3,9 +3,6 @@
     "code": 0
   },
   "tshirts": [
-    {"title": "vgbhjlk",
-      "caption": "gvhbjn"
-    },
     {
       "img": "asset.tshirt_w_1",
       "name": "Топ с подплечниками",
@@ -319,11 +316,6 @@
       "img": "asset.shirt_w_9",
       "name":"Трикотажная рубашка с разрывами",
       "price": "2199 руб."
-    },
-    {
-      "img": "asset.shirts_w_10",
-      "name":"Рубашка оверсайз с анималистичным принтом",
-      "price": "2599 руб."
     },
     {
       "img": "asset.shirt_w_11",

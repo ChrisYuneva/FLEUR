@@ -6,37 +6,21 @@ interface LotProps {
     img: any;
     name: string;
     price: string;
-    title: string;
-    caption: string;
     click?: any;
 }
 
-const Lot: React.FC<LotProps> = ({
-    img,
-    name,
-    price,
-    title,
-    caption,
-    click,
-    children,
-}) => (
-    <div>
-        <div>
-            <h2>{title}</h2>
-            <span>{caption}</span>
+const Lot: React.FC<LotProps> = ({ img, name, price, click, children }) => (
+    <div className={style.showlittle}>
+        <div className={style.image}>
+            <img src={img} />
+            <button className={style.middle} onClick={click}>
+                <span className={style.text}>{i18next.t('repos.add')}</span>
+            </button>
         </div>
-        <div className={style.showlittle}>
-            <div className={style.image}>
-                <img src={img} />
-                <button className={style.middle} onClick={click}>
-                    <span className={style.text}>{i18next.t('repos.add')}</span>
-                </button>
-            </div>
-            <span>
-                {name} <br /> {price}
-            </span>
-            {children}
-        </div>
+        <span>
+            {name} <br /> {price}
+        </span>
+        {children}
     </div>
 );
 

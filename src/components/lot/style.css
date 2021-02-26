@@ -43,6 +43,7 @@
         border: 1px solid black;
         font-size: var(--offset-sm);
         padding: var(--ofset-xs);
+        cursor: pointer;
     }
 
     a {
