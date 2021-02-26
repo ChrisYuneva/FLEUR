@@ -41,21 +41,22 @@
     flex-direction: row;
     height: 45%;
     align-items: flex-end;
-
-    .arrow_d {
-        display: flex;
-        flex-direction: row;
-        height: 35px;
-        width: 150px;
-        color: var(--white);
-        right: 0;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        cursor: pointer;
-        text-decoration: none;
-    }
 }
+
+.arrow_d {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 150px;
+    color: var(--white);
+    right: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .home {
     height: 55%;
     align-items: center;
@@ -65,18 +66,19 @@
     flex-direction: row;
     cursor: pointer;
     text-decoration: none;
-    .rectangle {
-        display: flex;
-        width: 220px;
-        height: 50px;
-        background: transparent;
-        border: 2px solid var(--white);
-        color: var(--white);
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+}
+
+.rectangle {
+    display: flex;
+    width: 220px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .arrow {
