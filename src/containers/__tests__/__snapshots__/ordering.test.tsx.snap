@@ -168,11 +168,11 @@ exports[`Тестирование Тестируем рендер Luck 1`] = `
       </h1>
       <Link
         className="continue"
-        to="/showcase_dress"
+        to="/showcase_women"
       >
         <a
           className="continue"
-          href="/showcase_dress"
+          href="/showcase_women"
         >
           Продолжить покупки
         </a>

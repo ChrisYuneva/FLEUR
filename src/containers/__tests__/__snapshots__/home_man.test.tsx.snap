@@ -57,11 +57,11 @@ exports[`Тестирование Тестируем рендер HomeMans 1`] =
       </div>
       <Link
         className="home"
-        to="/showcase_jackets_men"
+        to="/showcase_men"
       >
         <a
           className="home"
-          href="/showcase_jackets_men"
+          href="/showcase_men"
         >
           <div
             className="rectangle"

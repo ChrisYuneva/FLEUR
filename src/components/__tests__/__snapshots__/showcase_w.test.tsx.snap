@@ -39,102 +39,62 @@ exports[`<ShowcaseWoman /> Отрисовывается без ошибок 1`] 
               FLEUR
             </a>
           </Link>
-          <Link
+          <button
             className="link"
-            to="/showcase_dress"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_dress"
-            >
-              Платья
-            </a>
-          </Link>
-          <Link
+            Платья
+          </button>
+          <button
             className="link"
-            to="/showcase_jackets_women"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_jackets_women"
-            >
-              Куртки
-            </a>
-          </Link>
-          <Link
+            Куртки
+          </button>
+          <button
             className="link"
-            to="/showcase_shirts_women"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_shirts_women"
-            >
-              Рубашки
-            </a>
-          </Link>
-          <Link
+            Рубашки
+          </button>
+          <button
             className="link"
-            to="/showcase_hoodies_women"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_hoodies_women"
-            >
-              Толстовки
-            </a>
-          </Link>
-          <Link
+            Толстовки
+          </button>
+          <button
             className="link"
-            to="/showcase_tshirts_women"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_tshirts_women"
-            >
-              Футболки
-            </a>
-          </Link>
-          <Link
+            Футболки
+          </button>
+          <button
             className="link"
-            to="/showcase_jeans_women"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_jeans_women"
-            >
-              Джинсы
-            </a>
-          </Link>
-          <Link
+            Джинсы
+          </button>
+          <button
             className="link"
-            to="/showcase_skirts"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_skirts"
-            >
-              Юбки
-            </a>
-          </Link>
-          <Link
+            Юбки
+          </button>
+          <button
             className="link"
-            to="/showcase_accessories"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_accessories"
-            >
-              Аксессуары
-            </a>
-          </Link>
+            Аксессуары
+          </button>
           <Link
             className="link"
             onClick={[Function]}
-            to="/showcase_jackets_men"
+            to="/showcase_men"
           >
             <a
               className="link"
-              href="/showcase_jackets_men"
+              href="/showcase_men"
               onClick={[Function]}
             >
               Мужчины
@@ -183,7 +143,27 @@ exports[`<ShowcaseWoman /> Отрисовывается без ошибок 1`] 
             >
               <div
                 className="showrow"
-              />
+              >
+                <Connect(Showcases)
+                  initGender="FEMALE"
+                  initType="dress"
+                >
+                  <Showcases
+                    addProducts={[Function]}
+                    gender={null}
+                    getProducts={[Function]}
+                    goodsItems={Array []}
+                    initGender="FEMALE"
+                    initType="dress"
+                    loading={true}
+                    type={null}
+                  >
+                    <p>
+                      Пожалуйста, подождите. Идёт загрузка
+                    </p>
+                  </Showcases>
+                </Connect(Showcases)>
+              </div>
             </div>
           </div>
         </div>

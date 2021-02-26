@@ -4,9 +4,9 @@ import { URLs } from '../../__data__/urls';
 import asset from '../../asset';
 import { Link } from 'react-router-dom';
 import i18next from 'i18next';
-import { connect } from 'react-redux';
+import { connect, batch } from 'react-redux';
 import { setGender, setType } from '../../__data__/actions/goods';
-import Showcase from '../showcase';
+import Showcases from '../showcase';
 
 interface ShowcaseMenProps {
     title: string;
@@ -18,35 +18,43 @@ type MapDispatchToProps = {
     setType(type): () => void;
 };
 
-const ShowcaseMen: React.FC<ShowcaseMenProps> = ({
+type ShowcaseProps = MapDispatchToProps & ShowcaseMenProps;
+
+const ShowcaseMen: React.FC<ShowcaseProps> = ({
     caption,
     title,
-    children,
+    setType,
+    setGender,
 }) => (
     <div className={style.wrapper}>
         <nav className={style.nav}>
-            <button className={style.name}>
+            <Link className={style.name} to={URLs.home.url}>
                 {i18next.t('repos.name')}
-            </button>
-            <button className={style.link}>
+            </Link>
+            <button className={style.link} onClick={() => setType('jackets')}>
                 {i18next.t('repos.jackets')}
             </button>
-            <button className={style.link}>
+            <button className={style.link} onClick={() => setType('shirts')}>
                 {i18next.t('repos.shirts')}
             </button>
-            <button className={style.link}>
+            <button className={style.link} onClick={() => setType('hoodies')}>
                 {i18next.t('repos.hoodies')}
             </button>
-            <button className={style.link}>
+            <button className={style.link} onClick={() => setType('tshirts')}>
                 {i18next.t('repos.t-shirts')}
             </button>
-            <button className={style.link}>
+            <button className={style.link} onClick={() => setType('jeans')}>
                 {i18next.t('repos.jeans')}
             </button>
             <Link
                 className={style.link}
                 to={URLs.showcase_women.url}
-                onClick={() => setGender('FEMALE')}
+                onClick={() =>
+                    batch(() => {
+                        setGender('FEMALE');
+                        setType('dress');
+                    })
+                }
             >
                 {i18next.t('repos.women')}
             </Link>
@@ -55,14 +63,18 @@ const ShowcaseMen: React.FC<ShowcaseMenProps> = ({
             <header className={style.header}>
                 <Link className={style.ref} to={URLs.basket.url}>
                     <img src={asset.icon3} className={style.box} />
-                    <a className={style.text}>{i18next.t('repos.basket')}</a>
+                    <span className={style.text}>
+                        {i18next.t('repos.basket')}
+                    </span>
                 </Link>
             </header>
             <div className={style.scan}>
                 <h2>{title}</h2>
                 <span className={style.span}>{caption}</span>
                 <div className={style.show}>
-                    <div className={style.showrow}><Showcase /></div>
+                    <div className={style.showrow}>
+                        <Showcases initType="jackets" initGender="MALE" />
+                    </div>
                 </div>
             </div>
         </div>

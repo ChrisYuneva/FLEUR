@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { getConfigValue } from '@ijl/cli';
 import * as types from '../action-types';
+import { commonAxios } from '../../utils/axios';
 
 const submitActionCreator = () => ({ type: types.GOODS.REQUEST });
 const successActionCreator = (type, items) => ({
@@ -22,10 +23,10 @@ export const getProducts = (gender, type) => async (dispatch) => {
 
     dispatch(submitActionCreator());
     try {
-        const response = await axios.get(`${baseApiUrl}/getProducts`, {
+        const response = await commonAxios.get(`${baseApiUrl}/getProducts`, {
             params,
         });
-        dispatch(successActionCreator(types.GOODS.SUCCESS, response.data.data));
+        dispatch(successActionCreator(types.GOODS.SUCCESS, response.data));
     } catch (error) {
         dispatch(errorActionCreator('Неизвестная ошибка'));
     }

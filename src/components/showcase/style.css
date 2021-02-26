@@ -1,0 +1,9 @@
+@import '../../__data__/style/sizes.css';
+@import '../../__data__/style/colors.css';
+
+.showrow {
+    display: grid;
+    grid-row-gap: 64px;
+    grid-template-columns: 22% 22% 22% 22%;
+    margin-bottom: var(--offset-mlg);
+}

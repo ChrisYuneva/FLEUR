@@ -1,18 +1,16 @@
 import React from 'react';
+import { act } from 'react-dom/test-utils';
 import { mount } from 'enzyme';
-import { describe, it, expect } from '@jest/globals';
+import { describe, it, expect, beforeEach } from '@jest/globals';
 import { ShowcaseMan } from '../index';
 import { store } from '../../__data__/store';
 import { Provider } from 'react-redux';
 
 describe('<ShowcaseMan />', () => {
-    const title = 'title';
-    const caption = 'caption';
-
     it('Отрисовывается без ошибок', () => {
         const wrapper = mount(
             <Provider store={store}>
-                <ShowcaseMan title={title} caption={caption} />
+                <ShowcaseMan />
             </Provider>
         );
 

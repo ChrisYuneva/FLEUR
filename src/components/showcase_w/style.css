@@ -37,6 +37,9 @@
         text-decoration: none;
         color: black;
         padding-bottom: var(--offset-sm);
+        border: none;
+        background: none;
+        outline: none;
     }
 }
 
@@ -90,11 +93,4 @@
     flex-direction: column;
     padding-top: var(--offset-bmd);
 
-}
-
-.showrow {
-    display: grid;
-    grid-row-gap: 64px;
-    grid-template-columns: 22% 22% 22% 22%;
-    margin-bottom: var(--offset-mlg);
 }

@@ -8,6 +8,12 @@ import { getProducts } from '../../__data__/actions/goods';
 import { addProduct } from '../../__data__/actions/basket';
 import { getImgByName } from '../../utils';
 
+import style from './style.css';
+
+type OwnProps = {
+    initType: string;
+    initGender: string;
+};
 type MapStateToProps = {
     goodsItems: any;
     loading: boolean;
@@ -18,30 +24,38 @@ type MapDispatchToProps = {
     addProducts(item: any): () => void;
     getProducts(gender, type): () => void;
 };
-type ProductProps = MapDispatchToProps & MapStateToProps;
+type ProductProps = MapDispatchToProps & MapStateToProps & OwnProps;
 
-function Showcase({
+function Showcases({
     addProducts,
     goodsItems,
     getProducts,
     loading,
     gender,
     type,
+    initType,
+    initGender,
 }: React.PropsWithChildren<ProductProps>) {
     useEffect(() => {
-        getProducts(gender, type);
+        if (type) {
+            if (gender) getProducts(gender, type);
+            else getProducts(initGender, type);
+        } else {
+            if (gender) getProducts(gender, type);
+            else getProducts(initGender, initType);
+        }
     }, [type]);
 
-    // console.log(goodsItems);
-
     const { t, i18n } = useTranslation();
-    if (loading) {
+    console.log(loading, !goodsItems, goodsItems);
+    if (loading || !goodsItems) {
         return <p>Пожалуйста, подождите. Идёт загрузка</p>;
     }
     return (
-        <ShowcaseMan
-            title={i18next.t('repos.t-shirts')}
-            caption={i18next.t('repos.caption.t-shirts_m')}
+        <div
+            className={style.showrow}
+            // title={i18next.t('repos.t-shirts')}
+            // caption={i18next.t('repos.caption.t-shirts_m')}
         >
             <MetaTags>
                 <title>{t('repos.t-shirts_m')}</title>
@@ -51,12 +65,14 @@ function Showcase({
                 <Lot
                     click={() => addProducts(lot)}
                     key={index}
+                    title={t(lot.title)}
+                    caption={t(lot.caption)}
                     img={getImgByName(lot.img)}
                     name={t(lot.name)}
                     price={t(lot.price)}
                 />
             ))}
-        </ShowcaseMan>
+        </div>
     );
 }
 
@@ -72,4 +88,4 @@ const mapDispatchToProps = (dispatch): MapDispatchToProps => ({
     getProducts: (gender, type) => dispatch(getProducts(gender, type)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Showcase);
+export default connect(mapStateToProps, mapDispatchToProps)(Showcases);

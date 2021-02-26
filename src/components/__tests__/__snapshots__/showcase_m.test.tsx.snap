@@ -12,15 +12,10 @@ exports[`<ShowcaseMan /> Отрисовывается без ошибок 1`] = 
     }
   }
 >
-  <Connect(ShowcaseMen)
-    caption="caption"
-    title="title"
-  >
+  <Connect(ShowcaseMen)>
     <ShowcaseMen
-      caption="caption"
       setGender={[Function]}
       setType={[Function]}
-      title="title"
     >
       <div
         className="wrapper"
@@ -39,69 +34,44 @@ exports[`<ShowcaseMan /> Отрисовывается без ошибок 1`] = 
               FLEUR
             </a>
           </Link>
-          <Link
+          <button
             className="link"
-            to="/showcase_jackets_men"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_jackets_men"
-            >
-              Куртки
-            </a>
-          </Link>
-          <Link
+            Куртки
+          </button>
+          <button
             className="link"
-            to="/showcase_shirts_men"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_shirts_men"
-            >
-              Рубашки
-            </a>
-          </Link>
-          <Link
+            Рубашки
+          </button>
+          <button
             className="link"
-            to="/showcase_hoodies_men"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_hoodies_men"
-            >
-              Толстовки
-            </a>
-          </Link>
-          <Link
+            Толстовки
+          </button>
+          <button
             className="link"
-            to="/showcase_tshirts_men"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_tshirts_men"
-            >
-              Футболки
-            </a>
-          </Link>
-          <Link
+            Футболки
+          </button>
+          <button
             className="link"
-            to="/showcase_jeans_men"
+            onClick={[Function]}
           >
-            <a
-              className="link"
-              href="/showcase_jeans_men"
-            >
-              Джинсы
-            </a>
-          </Link>
+            Джинсы
+          </button>
           <Link
             className="link"
             onClick={[Function]}
-            to="/showcase_dress"
+            to="/showcase_women"
           >
             <a
               className="link"
-              href="/showcase_dress"
+              href="/showcase_women"
               onClick={[Function]}
             >
               Женщины
@@ -126,31 +96,47 @@ exports[`<ShowcaseMan /> Отрисовывается без ошибок 1`] = 
                   className="box"
                   src="FILE_MOCK"
                 />
-                <a
+                <span
                   className="text"
                 >
                   Корзина
-                </a>
+                </span>
               </a>
             </Link>
           </header>
           <div
             className="scan"
           >
-            <h2>
-              title
-            </h2>
+            <h2 />
             <span
               className="span"
-            >
-              caption
-            </span>
+            />
             <div
               className="show"
             >
               <div
                 className="showrow"
-              />
+              >
+                <Connect(Showcases)
+                  initGender="MALE"
+                  initType="jackets"
+                >
+                  <Showcases
+                    addProducts={[Function]}
+                    gender={null}
+                    getProducts={[Function]}
+                    goodsItems={Array []}
+                    initGender="MALE"
+                    initType="jackets"
+                    loading={true}
+                    type={null}
+                  >
+                    <p>
+                      Пожалуйста, подождите. Идёт загрузка
+                    </p>
+                  </Showcases>
+                </Connect(Showcases)>
+              </div>
             </div>
           </div>
         </div>

@@ -4,9 +4,9 @@ import { URLs } from '../../__data__/urls';
 import asset from '../../asset';
 import { Link } from 'react-router-dom';
 import i18next from 'i18next';
-import { connect } from 'react-redux';
+import { connect, batch } from 'react-redux';
 import { setGender, setType } from '../../__data__/actions/goods';
-import Showcase from '../showcase';
+import Showcases from '../showcase';
 
 type ShowcaseWomanProps = {
     title: string;
@@ -25,7 +25,6 @@ const ShowcaseWoman: React.FC<ShowcaseProps> = ({
     title,
     setGender,
     setType,
-    children,
 }) => (
     <div className={style.wrapper}>
         <nav className={style.nav}>
@@ -53,13 +52,21 @@ const ShowcaseWoman: React.FC<ShowcaseProps> = ({
             <button className={style.link} onClick={() => setType('skirts')}>
                 {i18next.t('repos.skirts')}
             </button>
-            <button className={style.link} onClick={() => setType('accessories')}>
+            <button
+                className={style.link}
+                onClick={() => setType('accessories')}
+            >
                 {i18next.t('repos.accessories')}
             </button>
             <Link
                 className={style.link}
                 to={URLs.showcase_men.url}
-                onClick={() => setGender('MALE')}
+                onClick={() =>
+                    batch(() => {
+                        setGender('MALE');
+                        setType('jackets');
+                    })
+                }
             >
                 {i18next.t('repos.men')}
             </Link>
@@ -75,7 +82,9 @@ const ShowcaseWoman: React.FC<ShowcaseProps> = ({
                 <h2>{title}</h2>
                 <span className={style.span}>{caption}</span>
                 <div className={style.show}>
-                    {/*<div className={style.showrow}><Showcase /></div>*/}
+                    <div className={style.showrow}>
+                        <Showcases initType="dress" initGender="FEMALE" />
+                    </div>
                 </div>
             </div>
         </div>

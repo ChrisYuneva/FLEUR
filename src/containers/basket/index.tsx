@@ -59,7 +59,7 @@ function Basket({
                 </div>
             </div>
             <div className={style.score}>
-                <Link className={style.continue} to={URLs.home.url}>
+                <Link className={style.continue} to={URLs.showcase_women.url}>
                     {t('repos.continue')}
                 </Link>
                 <Link className={style.continue} to={URLs.ordering.url}>

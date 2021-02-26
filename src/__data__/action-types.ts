@@ -4,6 +4,7 @@ export const GOODS = {
     FAILURE: 'GOODS_FAILURE',
     SET_GENDER: 'GOODS_SET_GENDER',
     SET_TYPE: 'GOODS_SET_TYPE',
+    // SET_TITLE: 'GOODS_SET_TITLE'
 };
 
 export const BASKET = {
