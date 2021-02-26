@@ -31,7 +31,6 @@ describe('Тестирование всего приложения', () => {
     });
     //man
     it('Тестируем рендер man_jackets', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseMan />
@@ -50,7 +49,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер man_tshirts', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseMan />
@@ -69,7 +67,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер man-hoodies', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseMan />
@@ -88,7 +85,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер man-shirts', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseMan />
@@ -107,7 +103,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер man-jeans', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseMan />
@@ -127,7 +122,6 @@ describe('Тестирование всего приложения', () => {
     });
     //woman
     it('Тестируем рендер woman-jackets', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -146,7 +140,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-tshirts', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -165,7 +158,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-shirts', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -184,7 +176,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-hoodies', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -203,7 +194,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-dress', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -222,7 +212,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-accessories', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -241,7 +230,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-jeans', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
@@ -260,7 +248,6 @@ describe('Тестирование всего приложения', () => {
         expect(component).toMatchSnapshot();
     });
     it('Тестируем рендер woman-skirts', async () => {
-        // expect.assertions(2);
         const component = mount(
             <Provider store={store}>
                 <ShowcaseWoman />
