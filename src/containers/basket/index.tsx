@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import style from './style.css';
 import { URLs } from '../../__data__/urls';
 import { BasketLot } from '../../components';
-import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 import MetaTags from 'react-meta-tags';
 import { getBasket } from '../../__data__/actions/basket';
 import { getImgByName } from '../../utils';
@@ -27,8 +27,6 @@ function Basket({
         getBasket();
     }, []);
 
-    const { t, i18n } = useTranslation();
-
     if (loading) {
         return <p>Пожалуйста, подождите. Идёт загрузка</p>;
     }
@@ -36,15 +34,15 @@ function Basket({
     return (
         <div className={style.wrapper}>
             <MetaTags>
-                <title>{t('repos.basket')}</title>
+                <title>{i18next.t('repos.basket')}</title>
             </MetaTags>
             <header className={style.header}>
                 <Link className={style.name} to={URLs.home.url}>
-                    {t('repos.name')}
+                    {i18next.t('repos.name')}
                 </Link>
             </header>
             <div className={style.scan}>
-                <h2>{t('repos.basket')}</h2>
+                <h2>{i18next.t('repos.basket')}</h2>
             </div>
             <div className={style.show}>
                 <div className={style.showrow}>
@@ -52,18 +50,18 @@ function Basket({
                         <BasketLot
                             key={index}
                             img={getImgByName(lot.img)}
-                            name={t(lot.name)}
-                            price={t(lot.price)}
+                            name={i18next.t(lot.name)}
+                            price={i18next.t(lot.price)}
                         ></BasketLot>
                     ))}
                 </div>
             </div>
             <div className={style.score}>
                 <Link className={style.continue} to={URLs.showcase_women.url}>
-                    {t('repos.continue')}
+                    {i18next.t('repos.continue')}
                 </Link>
                 <Link className={style.continue} to={URLs.ordering.url}>
-                    {t('repos.checkout')}
+                    {i18next.t('repos.checkout')}
                 </Link>
             </div>
         </div>

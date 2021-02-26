@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import style from './style.css';
 import { URLs } from '../../../__data__/urls';
-import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 import { Form, Field } from 'react-final-form';
 
 function Input({ nextStep }) {
-    const { t, i18n } = useTranslation();
-
     async function handleSubmit(values) {
         const { name, surname, adress, index } = values;
         if (name && surname && adress && index) {
@@ -22,17 +20,17 @@ function Input({ nextStep }) {
         <div className={style.wrapper}>
             <header className={style.header}>
                 <Link className={style.name} to={URLs.home.url}>
-                    {t('repos.name')}
+                    {i18next.t('repos.name')}
                 </Link>
             </header>
             <Form
                 onSubmit={handleSubmit}
                 render={({ handleSubmit }) => (
                     <div className={style.order}>
-                        <h1>{t('repos.ordering')}</h1>
+                        <h1>{i18next.t('repos.ordering')}</h1>
                         <div className={style.form}>
                             <div className={style.input}>
-                                <label>{t('repos.input_name')}</label>
+                                <label>{i18next.t('repos.input_name')}</label>
                                 <Field
                                     name="firstName"
                                     component="input"
@@ -40,7 +38,7 @@ function Input({ nextStep }) {
                                 />
                             </div>
                             <div className={style.input}>
-                                <label>{t('repos.input_surname')}</label>
+                                <label>{i18next.t('repos.input_surname')}</label>
                                 <Field
                                     name="lastName"
                                     component="input"
@@ -48,7 +46,7 @@ function Input({ nextStep }) {
                                 />
                             </div>
                             <div className={style.input}>
-                                <label>{t('repos.input_adress')}</label>
+                                <label>{i18next.t('repos.input_adress')}</label>
                                 <Field
                                     name="adress"
                                     component="input"
@@ -56,7 +54,7 @@ function Input({ nextStep }) {
                                 />
                             </div>
                             <div className={style.input}>
-                                <label>{t('repos.input_index')}</label>
+                                <label>{i18next.t('repos.input_index')}</label>
                                 <Field
                                     name="index"
                                     component="input"
@@ -68,7 +66,7 @@ function Input({ nextStep }) {
                                 className={style.arrange}
                                 onClick={nextStep}
                             >
-                                {t('repos.arrange')}
+                                {i18next.t('repos.arrange')}
                             </button>
                         </div>
                     </div>

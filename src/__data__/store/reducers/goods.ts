@@ -30,7 +30,6 @@ const handleSetGender = (state, action) => ({
 });
 
 const handleSetType = (state, action) => ({ ...state, type: action.payload });
-// const handleSetTitle = (state, action) => ({...state, type: action.payload});
 
 export default function (state = initialState, action) {
     switch (action.type) {
@@ -44,8 +43,6 @@ export default function (state = initialState, action) {
             return handleSetGender(state, action);
         case types.GOODS.SET_TYPE:
             return handleSetType(state, action);
-        // case types.GOODS.SET_TITLE:
-        //     return handleSetTitle(state, action);
         default:
             return state;
     }
