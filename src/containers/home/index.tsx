@@ -21,7 +21,9 @@ function Home() {
             <div className={style.arrow_div}>
                 <Link className={style.arrow_d} to={URLs.home_man.url}>
                     <img src={asset.icon2} className={style.arrow} />
-                    <span className={style.arrow_man}>{i18next.t('repos.men')}</span>
+                    <span className={style.arrow_man}>
+                        {i18next.t('repos.men')}
+                    </span>
                 </Link>
             </div>
 

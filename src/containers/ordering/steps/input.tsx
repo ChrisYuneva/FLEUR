@@ -38,7 +38,9 @@ function Input({ nextStep }) {
                                 />
                             </div>
                             <div className={style.input}>
-                                <label>{i18next.t('repos.input_surname')}</label>
+                                <label>
+                                    {i18next.t('repos.input_surname')}
+                                </label>
                                 <Field
                                     name="lastName"
                                     component="input"

@@ -49,9 +49,7 @@ function Showcases({
         return <p>Пожалуйста, подождите. Идёт загрузка</p>;
     }
     return (
-        <div
-            className={style.showrow}
-        >
+        <div className={style.showrow}>
             <MetaTags>
                 <title>{i18next.t('repos.name')}</title>
             </MetaTags>

@@ -3,7 +3,7 @@ export const GOODS = {
     SUCCESS: 'GOODS_SUCCESS',
     FAILURE: 'GOODS_FAILURE',
     SET_GENDER: 'GOODS_SET_GENDER',
-    SET_TYPE: 'GOODS_SET_TYPE'
+    SET_TYPE: 'GOODS_SET_TYPE',
 };
 
 export const BASKET = {
