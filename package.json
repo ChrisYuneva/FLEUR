@@ -21,7 +21,7 @@
     "license": "MIT",
     "homepage": "https://bitbucket.org/chris_yuneva/repos#readme",
     "dependencies": {
-        "@ijl/cli": "2.5.6",
+        "@ijl/cli": "5.0.0",
         "@reduxjs/toolkit": "^1.5.0",
         "classnames": "^2.2.6",
         "csstype": "^3.0.5",
